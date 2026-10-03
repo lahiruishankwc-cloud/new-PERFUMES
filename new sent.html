@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PURE FRESH — Heavenly Scent Collection | Luxury Perfumes, Diffusers & Car Fragrances</title>
+<meta name="description" content="Pure Fresh crafts premium fragrances from high-quality essential oils for you, your home and your vehicle. Lavender, Jasmine & Sandalwood — one collection for every space, every moment, every you.">
+<meta property="og:title" content="PURE FRESH — Heavenly Scent Collection">
+<meta property="og:description" content="Three Scents, Three Emotions, One Pure You. Premium perfumes, reed diffusers and vehicle fragrances.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Pure Fresh","slogan":"One Collection For Every Space, Every Moment, Every You.","description":"Premium essential-oil fragrances for personal, home and vehicle use."}
+</script>
+<style>
+/* ============ FOUNDATION ============ */
+:root{
+  --purple:#5B3A8E; --purple-deep:#3E2A63; --ink:#241B38; --plum:#2A2140;
+  --lav:#B8A2D6; --lav-soft:#CBB8E6; --lav-tint:#EFE9F6;
+  --gold:#D4AF37; --gold-deep:#A8871F; --gold-soft:rgba(212,175,55,.4);
+  --beige:#F7F3EE; --beige-2:#EFE8DD; --white:#fff;
+  --line:rgba(91,58,142,.16); --line-gold:rgba(212,175,55,.38);
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost',Helvetica,sans-serif;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --shadow:0 24px 60px -20px rgba(62,42,99,.22);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
+body{font:400 16px/1.65 var(--sans);color:var(--plum);background:var(--beige);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body.locked{overflow:hidden}
+::selection{background:var(--lav);color:var(--ink)}
+svg{display:block}
+button{font-family:inherit;cursor:pointer;background:none;border:0;color:inherit}
+input,select,textarea{font-family:inherit;font-size:15px;color:var(--plum)}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:var(--beige)}
+::-webkit-scrollbar-thumb{background:var(--lav);border-radius:6px;border:2px solid var(--beige)}
+.wrap{max-width:1280px;margin:0 auto;padding:0 clamp(20px,5vw,56px)}
+.ic{flex:none}
+
+/* type helpers */
+.eyebrow{display:inline-flex;align-items:center;gap:14px;font:500 11px/1 var(--sans);letter-spacing:.4em;text-transform:uppercase;color:var(--gold-deep)}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--gold)}
+.sec-title{font:500 clamp(2.1rem,4.4vw,3.3rem)/1.12 var(--serif);color:var(--plum);margin:.45em 0 .4em;letter-spacing:.01em}
+.sec-title em{font-style:italic;color:var(--purple)}
+.sec-sub{max-width:56ch;color:rgba(42,33,64,.72);font-weight:300;font-size:16.5px}
+.flourish{display:flex;align-items:center;gap:10px;margin-top:18px}
+.flourish i{width:7px;height:7px;background:var(--gold);transform:rotate(45deg);flex:none}
+.flourish::before,.flourish::after{content:"";height:1px;background:var(--line-gold);flex:0 0 44px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:500 12.5px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;padding:1.15em 2.3em;border:1px solid transparent;transition:.35s var(--ease);white-space:nowrap}
+.btn-primary{background:var(--purple);color:#fff}
+.btn-primary:hover{background:var(--purple-deep);transform:translateY(-2px);box-shadow:0 14px 30px -12px rgba(91,58,142,.5)}
+.btn-ghost{border-color:var(--purple);color:var(--purple)}
+.btn-ghost:hover{background:var(--purple);color:#fff;transform:translateY(-2px)}
+.btn-gold{border-color:var(--gold);color:var(--gold-deep)}
+.btn-gold:hover{background:var(--gold);color:#fff;transform:translateY(-2px)}
+.btn-wa{background:var(--purple);color:#fff}
+.btn-wa:hover{background:var(--purple-deep)}
+.btn[disabled]{opacity:.45;pointer-events:none}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(30px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .rv{transition:none;opacity:1;transform:none}
+  *{animation-duration:.001s !important}
+}
+
+/* ============ NAV ============ */
+.nav{position:fixed;inset:0 0 auto;z-index:200;height:76px;display:flex;align-items:center;transition:.4s var(--ease)}
+.nav.scrolled{background:rgba(247,243,238,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{width:100%;max-width:1440px;margin:0 auto;padding:0 clamp(18px,4vw,48px);display:flex;align-items:center;gap:28px}
+.brand{font:600 22px/1 var(--serif);letter-spacing:.14em;color:var(--plum);display:flex;align-items:center;gap:9px}
+.brand b{font-weight:700}.brand span{font-weight:400;font-style:italic}
+.brand i{width:8px;height:8px;background:var(--gold);transform:rotate(45deg);flex:none}
+.nav-links{display:flex;gap:32px;margin-left:auto}
+.nav-links a{font:500 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:rgba(42,33,64,.78);position:relative;padding:6px 0}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--gold);transition:.35s var(--ease)}
+.nav-links a:hover{color:var(--plum)}.nav-links a:hover::after{width:100%}
+.nav-acts{display:flex;align-items:center;gap:6px;margin-left:8px}
+.nav-btn{position:relative;width:42px;height:42px;display:grid;place-items:center;border-radius:50%;color:var(--plum);transition:.3s}
+.nav-btn:hover{background:rgba(91,58,142,.1)}
+.badge{position:absolute;top:3px;right:2px;min-width:17px;height:17px;padding:0 4px;border-radius:9px;background:var(--gold);color:#fff;font:600 10px/17px var(--sans);text-align:center;transform:scale(0);transition:.3s var(--ease)}
+.badge.show{transform:scale(1)}
+.badge.pop{animation:pop .4s var(--ease)}
+@keyframes pop{50%{transform:scale(1.45)}}
+.menu-btn{display:none}
+
+/* mobile menu */
+.m-menu{position:fixed;inset:0;z-index:300;background:var(--purple-deep);display:flex;flex-direction:column;justify-content:center;padding:0 10vw;clip-path:circle(0 at calc(100% - 44px) 40px);transition:clip-path .7s var(--ease);visibility:hidden}
+.m-menu.open{clip-path:circle(150% at calc(100% - 44px) 40px);visibility:visible}
+.m-menu a{font:500 clamp(1.8rem,7vw,2.6rem)/1 var(--serif);color:var(--beige);padding:.45em 0;border-bottom:1px solid rgba(184,162,214,.18);display:flex;justify-content:space-between;align-items:center;opacity:0;transform:translateY(16px);transition:.5s var(--ease)}
+.m-menu.open a{opacity:1;transform:none}
+.m-menu a em{font:400 11px var(--sans);letter-spacing:.3em;color:var(--gold);text-transform:uppercase;font-style:normal}
+.m-close{position:absolute;top:18px;right:22px;color:var(--beige);width:44px;height:44px;display:grid;place-items:center}
+
+/* ============ HERO ============ */
+.hero{position:relative;min-height:100svh;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:3vw;max-width:1460px;margin:0 auto;padding:120px clamp(20px,4.5vw,56px) 40px;background:
+  radial-gradient(900px 620px at 78% 42%,rgba(184,162,214,.20),transparent 65%),
+  radial-gradient(700px 500px at 12% 88%,rgba(212,175,55,.08),transparent 60%),
+  var(--beige)}
+.hero-copy{position:relative;z-index:3}
+.hero-kicker{font:italic 500 clamp(1.05rem,1.6vw,1.3rem)/1 var(--serif);letter-spacing:.28em;text-transform:uppercase;color:var(--gold-deep);display:block;margin-bottom:18px}
+.hero h1{font:600 clamp(3.4rem,8.4vw,7rem)/.98 var(--serif);letter-spacing:.045em;color:var(--plum)}
+.hero h1 span{display:block;font-weight:400;font-style:italic;font-size:.32em;letter-spacing:.34em;color:var(--purple);margin-top:.55em}
+.hero-tag{font:300 clamp(1.02rem,1.5vw,1.22rem)/1.7 var(--sans);color:rgba(42,33,64,.72);max-width:44ch;margin:26px 0 34px}
+.hero-tag b{font-weight:500;color:var(--plum)}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-fade{opacity:0;transform:translateY(26px);animation:heroUp 1s var(--ease) forwards}
+@keyframes heroUp{to{opacity:1;transform:none}}
+
+/* scent switcher + notes */
+.s-switch{display:flex;gap:6px;margin:40px 0 0;border-bottom:1px solid var(--line);width:max-content;max-width:100%}
+.s-switch button{display:flex;align-items:center;gap:9px;padding:13px 20px;font:500 12px var(--sans);letter-spacing:.22em;text-transform:uppercase;color:rgba(42,33,64,.55);position:relative;transition:.3s}
+.s-switch button i{width:8px;height:8px;border-radius:50%;background:var(--dot);flex:none;transition:.4s}
+.s-switch button::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:2px;background:var(--gold);transform:scaleX(0);transition:.45s var(--ease)}
+.s-switch button.on{color:var(--plum)}
+.s-switch button.on::after{transform:scaleX(1)}
+.s-switch button.on i{box-shadow:0 0 0 4px color-mix(in srgb,var(--dot) 22%,transparent)}
+.notes{display:grid;grid-template-columns:repeat(3,auto);gap:8px 38px;margin-top:22px;transition:opacity .3s,transform .3s}
+.notes.swap{opacity:0;transform:translateY(8px)}
+.notes dt{font:500 10px var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:3px}
+.notes dd{font:italic 500 16.5px var(--serif);color:var(--plum)}
+.scroll-hint{position:absolute;left:clamp(20px,4.5vw,56px);bottom:26px;display:flex;align-items:center;gap:12px;font:500 10px var(--sans);letter-spacing:.4em;text-transform:uppercase;color:rgba(42,33,64,.45)}
+.scroll-hint::after{content:"";width:52px;height:1px;background:var(--gold);animation:pulseLine 2.4s ease-in-out infinite}
+@keyframes pulseLine{50%{transform:scaleX(.4);opacity:.4}}
+
+/* hero stage */
+.hero-stage{position:relative;height:min(660px,74vh);display:grid;place-items:end center;z-index:2}
+.stage-circle{position:absolute;top:50%;left:50%;width:min(460px,88%);aspect-ratio:1;transform:translate(-50%,-52%);border-radius:50%;background:radial-gradient(circle,var(--tint) 0%,transparent 70%);transition:background 1s;pointer-events:none}
+.stage-ring{position:absolute;top:50%;left:50%;width:min(540px,100%);aspect-ratio:1;transform:translate(-50%,-52%);border-radius:50%;border:1px solid var(--line-gold);pointer-events:none}
+.stage-ring::after{content:"";position:absolute;top:-5px;left:50%;width:9px;height:9px;background:var(--gold);transform:translateX(-50%) rotate(45deg)}
+.hero-bottle{width:min(330px,64%);height:auto;position:relative;z-index:2;filter:drop-shadow(0 30px 30px rgba(62,42,99,.18))}
+.liq{transition:fill 1s var(--ease)}
+.vapor path{stroke:var(--vap,#B8A2D6);fill:none;stroke-width:2.6;stroke-linecap:round;opacity:0;filter:blur(1.4px);stroke-dasharray:5 13;animation:vap 5.2s ease-in-out infinite}
+.vapor path:nth-child(2){animation-delay:1.5s}
+.vapor path:nth-child(3){animation-delay:2.8s}
+@keyframes vap{0%{opacity:0;stroke-dashoffset:0;transform:translateY(8px)}30%{opacity:.8}100%{opacity:0;stroke-dashoffset:-72;transform:translateY(-12px)}}
+.bubble{fill:rgba(255,255,255,.55);opacity:0;animation:bub 6.5s linear infinite}
+.bubble:nth-child(2){animation-delay:2.2s}.bubble:nth-child(3){animation-delay:4.1s}
+@keyframes bub{0%{transform:translateY(0);opacity:0}12%{opacity:.65}85%{opacity:.35}100%{transform:translateY(-92px);opacity:0}}
+.hero-bot{position:absolute;bottom:6%;width:min(200px,34%);opacity:0;transform:translateY(14px) rotate(-5deg) scale(.94);transition:.9s var(--ease);pointer-events:none}
+.hero-bot.right{right:2%}
+.hero-bot.left{left:2%}
+.hero-bot.on{opacity:1;transform:none}
+#petalCanvas{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+
+/* ============ MARQUEE ============ */
+.marquee{overflow:hidden;background:#fff;border-top:1px solid var(--line-gold);border-bottom:1px solid var(--line-gold);padding:15px 0}
+.mq-track{display:flex;width:max-content;animation:mq 30s linear infinite}
+.mq-track span{font:italic 500 15px var(--serif);letter-spacing:.3em;text-transform:uppercase;color:var(--purple);padding:0 26px;display:flex;align-items:center;gap:26px;white-space:nowrap}
+.mq-track span::after{content:"";width:6px;height:6px;background:var(--gold);transform:rotate(45deg)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ============ ABOUT ============ */
+.about{background:#fff;padding:clamp(80px,10vw,130px) 0}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,6vw,90px);align-items:start}
+.about-lead{font:400 clamp(1.15rem,1.7vw,1.4rem)/1.75 var(--sans);font-weight:300;color:rgba(42,33,64,.8);margin-top:8px}
+.about-lead b{font-weight:500;color:var(--plum)}
+.about-quote{margin-top:34px;padding-left:22px;border-left:2px solid var(--gold);font:italic 500 19px/1.6 var(--serif);color:var(--purple)}
+.feat-list{counter-reset:f}
+.feat-list li{display:flex;gap:22px;align-items:baseline;padding:21px 4px;border-bottom:1px solid var(--line);transition:.35s}
+.feat-list li:first-child{border-top:1px solid var(--line)}
+.feat-list li:hover{padding-left:14px;background:linear-gradient(90deg,rgba(184,162,214,.08),transparent)}
+.feat-list .n{font:italic 600 15px var(--serif);color:var(--gold-deep);flex:none}
+.feat-list h4{font:600 19px var(--serif);color:var(--plum);letter-spacing:.02em}
+.feat-list p{font:300 14px var(--sans);color:rgba(42,33,64,.65);margin-top:2px}
+
+/* ============ SCENT PANELS ============ */
+.scents{padding:clamp(80px,10vw,130px) 0;background:var(--beige)}
+.scent-panels{display:flex;gap:14px;min-height:580px;margin-top:48px}
+.sp{position:relative;flex:1 1 0;background:var(--tint);border:1px solid var(--line);overflow:hidden;cursor:pointer;transition:flex-grow .85s var(--ease),border-color .4s}
+.sp::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:.6s var(--ease)}
+.sp.active{flex-grow:2.7;cursor:default;border-color:var(--line-gold)}
+.sp.active::before{transform:scaleX(1)}
+.sp-ghost{position:absolute;inset:0 0 auto;top:34px;left:50%;transform:translateX(-50%) rotate(180deg);writing-mode:vertical-rl;font:600 24px var(--serif);letter-spacing:.24em;text-transform:uppercase;color:var(--purple);opacity:1;transition:.4s}
+.sp.active .sp-ghost{opacity:0}
+.sp-inner{position:absolute;inset:0;padding:clamp(28px,3.4vw,48px);opacity:0;visibility:hidden;transform:translateY(18px);transition:.55s var(--ease);overflow-y:auto}
+.sp.active .sp-inner{opacity:1;visibility:visible;transform:none;transition-delay:.3s}
+.sp-num{font:italic 500 15px var(--serif);letter-spacing:.2em;color:var(--gold-deep)}
+.sp-bot{width:clamp(120px,32%,170px);margin:18px 0 6px}
+.sp-inner h3{font:500 clamp(1.9rem,2.8vw,2.6rem)/1.05 var(--serif);color:var(--plum)}
+.sp-latin{font:italic 400 14.5px var(--serif);color:var(--purple);letter-spacing:.06em;margin:2px 0 16px}
+.sp-desc{font:300 15px/1.7 var(--sans);color:rgba(42,33,64,.75);max-width:42ch}
+.sp-benefits{margin:20px 0 26px}
+.sp-benefits li{display:flex;align-items:center;gap:12px;padding:9px 0;border-bottom:1px dashed var(--line-gold);font:400 14px var(--sans);color:var(--plum)}
+.sp-benefits li::before{content:"";width:16px;height:1px;background:var(--gold);flex:none}
+.sp-link{display:inline-flex;align-items:center;gap:10px;font:500 12px var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--purple);border-bottom:1px solid var(--gold);padding-bottom:6px;transition:.3s}
+.sp-link:hover{gap:16px;color:var(--gold-deep)}
+
+/* ============ CATEGORIES ============ */
+.cats{padding:clamp(80px,10vw,130px) 0;background:#fff}
+.cat-tabs{display:inline-flex;position:relative;border:1px solid var(--line);margin-top:40px;background:var(--beige)}
+.cat-tabs button{position:relative;z-index:1;padding:16px 30px;font:500 12px var(--sans);letter-spacing:.22em;text-transform:uppercase;color:rgba(42,33,64,.6);transition:color .4s}
+.cat-tabs button.on{color:#fff}
+.cat-ind{position:absolute;top:0;bottom:0;left:0;background:var(--purple);transition:.5s var(--ease)}
+.cat-pane{display:none;margin-top:52px}
+.cat-pane.on{display:block;animation:paneIn .6s var(--ease)}
+@keyframes paneIn{from{opacity:0;transform:translateY(18px)}}
+.cat-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(36px,5vw,80px);align-items:start}
+.cat-copy h3{font:500 clamp(1.7rem,2.6vw,2.3rem)/1.15 var(--serif);color:var(--plum)}
+.cat-copy h3 em{color:var(--purple)}
+.cat-copy>p{font:300 15.5px/1.75 var(--sans);color:rgba(42,33,64,.72);margin:14px 0 24px}
+.cat-feats li{display:flex;gap:14px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line);font:400 14.5px var(--sans)}
+.cat-feats li:last-child{border-bottom:0}
+.cat-feats .ic{color:var(--gold-deep)}
+.mini-row{display:flex;align-items:center;gap:18px;padding:14px;border:1px solid var(--line);background:var(--beige);transition:.35s}
+.mini-row+.mini-row{margin-top:12px}
+.mini-row:hover{border-color:var(--line-gold);transform:translateX(6px);box-shadow:var(--shadow)}
+.mini-thumb{width:66px;height:78px;flex:none;display:grid;place-items:center;background:var(--tint,var(--lav-tint))}
+.mini-thumb svg{width:44px;height:auto}
+.mini-info{flex:1;min-width:0}
+.mini-info h4{font:600 17.5px var(--serif);color:var(--plum)}
+.mini-info span{font:300 12.5px var(--sans);color:rgba(42,33,64,.6);letter-spacing:.04em}
+.mini-right{text-align:right;flex:none}
+.mini-price{display:block;font:600 17px var(--serif);color:var(--purple);margin-bottom:6px}
+.mini-add{font:500 10.5px var(--sans);letter-spacing:.2em;text-transform:uppercase;border:1px solid var(--purple);color:var(--purple);padding:8px 16px;transition:.3s}
+.mini-add:hover{background:var(--purple);color:#fff}
+
+/* ============ WHY ============ */
+.why{padding:clamp(80px,10vw,130px) 0;background:var(--beige)}
+.why-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(40px,6vw,100px)}
+.why-left{position:sticky;top:110px;align-self:start}
+.why-left .btn{margin-top:30px}
+.why-list li{display:flex;gap:24px;align-items:flex-start;padding:26px 6px;border-bottom:1px solid var(--line);transition:.35s}
+.why-list li:first-child{border-top:1px solid var(--line)}
+.why-list li:hover{background:rgba(255,255,255,.7);padding-left:16px}
+.why-ico{width:52px;height:52px;flex:none;border:1px solid var(--line-gold);border-radius:50%;display:grid;place-items:center;color:var(--gold-deep);transition:.35s}
+.why-list li:hover .why-ico{background:var(--purple);border-color:var(--purple);color:#fff;transform:rotate(-8deg)}
+.why-list h4{font:600 20px var(--serif);color:var(--plum);letter-spacing:.02em}
+.why-list p{font:300 14px/1.65 var(--sans);color:rgba(42,33,64,.65);margin-top:3px;max-width:48ch}
+.why-num{margin-left:auto;font:italic 500 15px var(--serif);color:var(--lav);flex:none}
+
+/* ============ SHOP ============ */
+.shop{padding:clamp(80px,10vw,130px) 0;background:#fff}
+.shop-tools{margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;gap:14px 10px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.chip{font:500 11.5px var(--sans);letter-spacing:.18em;text-transform:uppercase;padding:10px 18px;border:1px solid var(--line);color:rgba(42,33,64,.6);display:inline-flex;align-items:center;gap:8px;transition:.3s;background:transparent}
+.chip i{width:8px;height:8px;border-radius:50%;background:var(--dot,transparent);border:1px solid var(--line-gold)}
+.chip:hover{border-color:var(--purple);color:var(--plum)}
+.chip.on{background:var(--purple);border-color:var(--purple);color:#fff}
+.chip.on i{border-color:transparent}
+.tool-right{margin-left:auto;display:flex;gap:10px;align-items:center}
+.shop-search{display:flex;align-items:center;gap:9px;border:1px solid var(--line);padding:0 14px;background:var(--beige)}
+.shop-search input{border:0;background:transparent;padding:11px 0;width:150px;outline:none;font-size:14px}
+.shop-search .ic{color:var(--gold-deep)}
+.sort-sel{border:1px solid var(--line);background:var(--beige);padding:11px 14px;outline:none;font:400 13px var(--sans);cursor:pointer}
+.shop-count{margin:22px 0 6px;font:italic 500 15px var(--serif);color:var(--purple)}
+.p-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:26px;margin-top:22px}
+.p-card{background:#fff;border:1px solid var(--line);transition:.45s var(--ease);display:flex;flex-direction:column;animation:cardIn .55s var(--ease) both}
+@keyframes cardIn{from{opacity:0;transform:translateY(20px)}}
+.p-card:hover{transform:translateY(-7px);box-shadow:var(--shadow);border-color:var(--line-gold)}
+.p-card.flash{animation:flash 1.5s var(--ease)}
+@keyframes flash{0%,60%{box-shadow:0 0 0 3px var(--gold),var(--shadow)}100%{box-shadow:var(--shadow)}}
+.p-media{position:relative;aspect-ratio:1/1.02;background:var(--tint);display:grid;place-items:center;overflow:hidden}
+.p-media svg{width:58%;height:auto;transition:.6s var(--ease)}
+.p-card:hover .p-media svg{transform:translateY(-6px) rotate(-1.5deg) scale(1.04)}
+.p-tag{position:absolute;top:14px;left:14px;font:500 9.5px var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);background:rgba(255,255,255,.85);backdrop-filter:blur(4px);padding:6px 11px}
+.wish-btn{position:absolute;top:12px;right:12px;width:38px;height:38px;border-radius:50%;background:rgba(255,255,255,.88);backdrop-filter:blur(4px);display:grid;place-items:center;color:var(--purple);transition:.3s}
+.wish-btn:hover{transform:scale(1.12)}
+.wish-btn.on{color:#b0475e}
+.wish-btn.on .ic{fill:currentColor}
+.oos-badge{position:absolute;bottom:14px;left:14px;background:var(--plum);color:#fff;font:500 10px var(--sans);letter-spacing:.2em;text-transform:uppercase;padding:6px 12px}
+.p-info{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1}
+.p-scent{font:500 10.5px var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--gold-deep)}
+.p-name{font:600 20px/1.2 var(--serif);color:var(--plum);margin:6px 0 2px}
+.p-desc{font:300 13px var(--sans);color:rgba(42,33,64,.6)}
+.p-row{margin-top:auto;padding-top:16px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.p-price{font:600 19px var(--serif);color:var(--purple)}
+.add-btn{font:500 11px var(--sans);letter-spacing:.2em;text-transform:uppercase;border:1px solid var(--purple);color:var(--purple);padding:11px 18px;display:inline-flex;gap:8px;align-items:center;transition:.3s}
+.add-btn:hover{background:var(--purple);color:#fff}
+.add-btn[disabled]{border-color:var(--line);color:rgba(42,33,64,.4);pointer-events:none}
+.no-results{grid-column:1/-1;text-align:center;padding:70px 20px;border:1px dashed var(--line)}
+.no-results h3{font:italic 500 24px var(--serif);color:var(--purple)}
+.no-results p{font:300 14px var(--sans);color:rgba(42,33,64,.6);margin-top:8px}
+
+/* ============ TESTIMONIALS ============ */
+.testi{background:var(--purple-deep);color:var(--beige);padding:clamp(80px,10vw,130px) 0;position:relative;overflow:hidden}
+.testi::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 400px at 85% 15%,rgba(184,162,214,.14),transparent 65%)}
+.testi .eyebrow{color:var(--gold)}
+.testi .sec-title{color:#fff}
+.testi .sec-title em{color:var(--lav)}
+.t-frame{position:relative;max-width:820px;margin:44px auto 0;padding:clamp(34px,5vw,60px);text-align:center}
+.t-frame::before,.t-frame::after,.t-c1::before,.t-c1::after{content:"";position:absolute;width:34px;height:34px;border:1px solid var(--gold)}
+.t-frame::before{top:0;left:0;border-right:0;border-bottom:0}
+.t-frame::after{top:0;right:0;border-left:0;border-bottom:0}
+.t-c1::before{bottom:0;left:0;border-right:0;border-top:0}
+.t-c1::after{bottom:0;right:0;border-left:0;border-top:0}
+.t-viewport{overflow:hidden}
+.t-track{display:flex;transition:transform .7s var(--ease)}
+.t-slide{flex:0 0 100%;padding:0 clamp(4px,2vw,20px)}
+.t-stars{display:flex;justify-content:center;gap:5px;color:var(--gold);margin-bottom:22px}
+.t-quote{font:italic 500 clamp(1.35rem,2.5vw,1.85rem)/1.5 var(--serif);color:#fff}
+.t-quote::before{content:"“";color:var(--gold);font-size:1.4em}
+.t-quote::after{content:"”";color:var(--gold);font-size:1.4em}
+.t-author{margin-top:24px;font:500 11.5px var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--lav)}
+.t-author span{display:block;margin-top:5px;color:rgba(247,243,238,.55);letter-spacing:.18em;font-weight:300}
+.t-nav{display:flex;justify-content:center;align-items:center;gap:22px;margin-top:36px}
+.t-arrow{width:46px;height:46px;border:1px solid rgba(184,162,214,.4);border-radius:50%;display:grid;place-items:center;color:var(--beige);transition:.3s}
+.t-arrow:hover{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.t-dots{display:flex;gap:9px}
+.t-dots button{width:26px;height:2px;background:rgba(184,162,214,.35);transition:.4s}
+.t-dots button.on{background:var(--gold);width:40px}
+
+/* ============ FAQ ============ */
+.faq{padding:clamp(80px,10vw,130px) 0;background:var(--beige)}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(40px,6vw,90px)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item:first-child{border-top:1px solid var(--line)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:20px;text-align:left;padding:24px 4px;font:600 20px var(--serif);color:var(--plum);transition:.3s}
+.faq-q:hover{color:var(--purple)}
+.faq-ico{width:34px;height:34px;flex:none;border:1px solid var(--line-gold);border-radius:50%;display:grid;place-items:center;color:var(--gold-deep);transition:.45s var(--ease)}
+.faq-item.open .faq-ico{transform:rotate(45deg);background:var(--purple);border-color:var(--purple);color:#fff}
+.faq-a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--ease)}
+.faq-item.open .faq-a{grid-template-rows:1fr}
+.faq-a>div{overflow:hidden}
+.faq-a p{font:300 15px/1.75 var(--sans);color:rgba(42,33,64,.72);padding:0 44px 26px 4px;max-width:60ch}
+
+/* ============ CONTACT ============ */
+.contact{padding:clamp(80px,10vw,130px) 0;background:#fff}
+.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(40px,6vw,90px);margin-top:48px;align-items:start}
+.field{margin-bottom:24px}
+.field label{display:block;font:500 10.5px var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:4px}
+.field input,.field textarea{width:100%;border:0;border-bottom:1px solid rgba(91,58,142,.3);background:transparent;padding:11px 2px;outline:none;transition:border-color .3s;resize:vertical}
+.field textarea{min-height:110px}
+.field input:focus,.field textarea:focus{border-color:var(--gold)}
+.field .err{font:400 12px var(--sans);color:#b0475e;margin-top:5px;display:none}
+.field.bad input,.field.bad textarea{border-color:#b0475e}
+.field.bad .err{display:block}
+.contact-side{background:var(--beige);border:1px solid var(--line);padding:clamp(26px,3vw,40px)}
+.c-block{display:flex;gap:18px;padding:18px 0;border-bottom:1px solid var(--line)}
+.c-block .ic{color:var(--gold-deep);margin-top:4px}
+.c-block h5{font:500 11px var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--purple);margin-bottom:4px}
+.c-block p{font:300 14.5px/1.6 var(--sans);color:rgba(42,33,64,.75)}
+.c-social{display:flex;gap:12px;padding:20px 0}
+.c-social a{width:44px;height:44px;border:1px solid var(--line-gold);border-radius:50%;display:grid;place-items:center;color:var(--purple);transition:.3s}
+.c-social a:hover{background:var(--purple);border-color:var(--purple);color:#fff;transform:translateY(-3px)}
+.map-box{margin-top:20px;border:1px solid var(--line);overflow:hidden}
+.map-box iframe{width:100%;height:230px;border:0;filter:grayscale(.35) sepia(.18) saturate(.85);display:block}
+
+/* ============ FOOTER ============ */
+footer{background:var(--ink);color:rgba(247,243,238,.75);padding:clamp(64px,8vw,100px) 0 0}
+.foot-tag{font:italic 500 clamp(1.6rem,3.4vw,2.5rem)/1.35 var(--serif);color:#fff;max-width:22ch}
+.foot-tag span{color:var(--gold)}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:clamp(30px,4vw,60px);margin-top:56px;padding-top:48px;border-top:1px solid rgba(184,162,214,.18)}
+.foot-grid h5{font:500 11px var(--sans);letter-spacing:.32em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.foot-grid a{display:block;font:300 14.5px/2.1 var(--sans);color:rgba(247,243,238,.72);transition:.3s}
+.foot-grid a:hover{color:#fff;padding-left:6px}
+.foot-brand{font:600 24px var(--serif);letter-spacing:.14em;color:#fff;display:flex;align-items:center;gap:9px}
+.foot-brand i{width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
+.foot-about{font:300 14px/1.75 var(--sans);margin-top:14px;max-width:34ch}
+.news-row{display:flex;border:1px solid rgba(184,162,214,.35);margin-top:6px}
+.news-row input{flex:1;background:transparent;border:0;outline:none;padding:13px 16px;color:#fff;font-size:14px;min-width:0}
+.news-row input::placeholder{color:rgba(247,243,238,.45)}
+.news-row button{background:var(--gold);color:var(--ink);font:500 11px var(--sans);letter-spacing:.2em;text-transform:uppercase;padding:0 20px;transition:.3s}
+.news-row button:hover{background:#fff}
+.foot-social{display:flex;gap:11px;margin-top:22px}
+.foot-social a{width:40px;height:40px;border:1px solid rgba(184,162,214,.35);border-radius:50%;display:grid;place-items:center;color:var(--lav);transition:.3s}
+.foot-social a:hover{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.foot-bottom{margin-top:56px;padding:22px 0;border-top:1px solid rgba(184,162,214,.15);display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;font:300 13px var(--sans);color:rgba(247,243,238,.5)}
+.foot-bottom a{color:rgba(247,243,238,.7)}.foot-bottom a:hover{color:var(--gold)}
+
+/* ============ DRAWERS / MODALS ============ */
+.scrim{position:fixed;inset:0;z-index:400;background:rgba(36,27,56,.55);backdrop-filter:blur(3px);opacity:0;visibility:hidden;transition:.45s}
+.scrim.on{opacity:1;visibility:visible}
+.drawer{position:fixed;top:0;right:0;bottom:0;z-index:410;width:min(440px,100vw);background:var(--beige);transform:translateX(102%);transition:transform .55s var(--ease);display:flex;flex-direction:column;box-shadow:-20px 0 60px rgba(36,27,56,.2)}
+.drawer.open{transform:none}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:22px 26px;border-bottom:1px solid var(--line)}
+.drawer-head h3{font:600 22px var(--serif);color:var(--plum)}
+.drawer-head h3 span{font:italic 400 15px var(--serif);color:var(--gold-deep)}
+.x-btn{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:var(--plum);transition:.3s}
+.x-btn:hover{background:rgba(91,58,142,.12);transform:rotate(90deg)}
+.drawer-body{flex:1;overflow-y:auto;padding:20px 26px}
+.drawer-empty{text-align:center;padding:70px 20px;color:rgba(42,33,64,.6)}
+.drawer-empty .ic{margin:0 auto 16px;color:var(--lav)}
+.drawer-empty h4{font:italic 500 22px var(--serif);color:var(--purple)}
+.drawer-empty p{font:300 14px var(--sans);margin-bottom:22px}
+.c-item{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);animation:cardIn .4s var(--ease)}
+.c-thumb{width:64px;height:76px;flex:none;display:grid;place-items:center;background:var(--tint)}
+.c-thumb svg{width:42px}
+.c-mid{flex:1;min-width:0}
+.c-mid h4{font:600 16.5px var(--serif);color:var(--plum);line-height:1.25}
+.c-mid .c-sub{font:300 12px var(--sans);color:rgba(42,33,64,.55)}
+.qty{display:inline-flex;align-items:center;border:1px solid var(--line);margin-top:9px}
+.qty button{width:28px;height:28px;display:grid;place-items:center;color:var(--purple);transition:.2s}
+.qty button:hover{background:var(--lav-tint)}
+.qty span{min-width:30px;text-align:center;font:500 13px var(--sans)}
+.c-right{text-align:right;flex:none;display:flex;flex-direction:column;align-items:flex-end;justify-content:space-between}
+.c-price{font:600 16.5px var(--serif);color:var(--purple)}
+.c-remove{color:rgba(42,33,64,.45);transition:.25s}.c-remove:hover{color:#b0475e}
+.w-actions{display:flex;gap:8px;align-items:center}
+.w-move{font:500 10px var(--sans);letter-spacing:.16em;text-transform:uppercase;border:1px solid var(--purple);color:var(--purple);padding:7px 12px;transition:.3s}
+.w-move:hover{background:var(--purple);color:#fff}
+.drawer-foot{padding:20px 26px 26px;border-top:1px solid var(--line);background:#fff}
+.d-total{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px}
+.d-total span{font:500 11px var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep)}
+.d-total b{font:600 26px var(--serif);color:var(--plum)}
+.d-note{font:300 12px var(--sans);color:rgba(42,33,64,.55);margin-bottom:16px}
+.drawer-foot .btn{width:100%}
+.drawer-foot .btn+.btn{margin-top:10px}
+
+.modal{position:fixed;inset:0;z-index:420;display:grid;place-items:center;padding:18px;opacity:0;visibility:hidden;transition:.4s}
+.modal.open{opacity:1;visibility:visible}
+.modal-panel{background:var(--beige);width:min(960px,100%);max-height:92vh;overflow-y:auto;transform:translateY(26px) scale(.98);transition:.5s var(--ease);box-shadow:0 40px 90px rgba(36,27,56,.4)}
+.modal.open .modal-panel{transform:none}
+.modal-head{position:sticky;top:0;z-index:2;display:flex;align-items:center;justify-content:space-between;padding:20px 30px;background:rgba(247,243,238,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.modal-head h3{font:600 23px var(--serif);color:var(--plum)}
+.co-body{display:grid;grid-template-columns:1.15fr .85fr;gap:0}
+.co-form{padding:30px}
+.co-sum{background:#fff;border-left:1px solid var(--line);padding:30px}
+.co-sum h4,.co-form h4{font:500 12px var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:18px}
+.sum-row{display:flex;justify-content:space-between;gap:14px;font:300 14px var(--sans);padding:9px 0;color:rgba(42,33,64,.8)}
+.sum-row b{font:500 14px var(--sans);color:var(--plum)}
+.sum-div{border-top:1px solid var(--line);margin-top:10px;padding-top:16px}
+.sum-div .sum-row b{font:600 22px var(--serif);color:var(--purple)}
+.pay-opts{display:grid;gap:10px;margin-bottom:20px}
+.pay-opt{display:flex;gap:13px;align-items:flex-start;border:1px solid var(--line);padding:15px 16px;cursor:pointer;transition:.3s;background:#fff}
+.pay-opt:hover{border-color:var(--purple)}
+.pay-opt input{accent-color:var(--purple);margin-top:3px}
+.pay-opt.sel{border-color:var(--purple);background:var(--lav-tint)}
+.pay-opt b{font:500 14.5px var(--sans);color:var(--plum);display:block}
+.pay-opt small{font:300 12.5px var(--sans);color:rgba(42,33,64,.6)}
+#cardFields{display:grid;grid-template-columns:1fr 1fr;gap:0 18px;overflow:hidden;max-height:0;opacity:0;transition:.45s var(--ease)}
+#cardFields.show{max-height:260px;opacity:1}
+#cardFields .f-num{grid-column:1/-1}
+.demo-note{font:300 12px/1.6 var(--sans);color:rgba(42,33,64,.55);background:var(--lav-tint);padding:11px 14px;border-left:2px solid var(--gold);margin:18px 0}
+.co-success{display:none;text-align:center;padding:64px 30px}
+.co-success.show{display:block;animation:paneIn .6s var(--ease)}
+.ok-ring{width:96px;height:96px;margin:0 auto 24px}
+.ok-ring circle,.ok-ring path{stroke:var(--gold);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.ok-ring circle{stroke-dasharray:290;stroke-dashoffset:290;animation:draw 1s var(--ease) forwards}
+.ok-ring path{stroke-dasharray:60;stroke-dashoffset:60;animation:draw .6s .7s var(--ease) forwards;stroke:var(--purple)}
+@keyframes draw{to{stroke-dashoffset:0}}
+.co-success h3{font:600 30px var(--serif);color:var(--plum)}
+.co-success .oid{font:500 12px var(--sans);letter-spacing:.3em;color:var(--gold-deep);text-transform:uppercase;margin:10px 0 4px}
+.co-success p{font:300 14.5px var(--sans);color:rgba(42,33,64,.7);max-width:44ch;margin:0 auto 26px}
+
+/* ============ ADMIN ============ */
+.admin-panel{width:min(1080px,100%)}
+.adm-gate{padding:70px 30px;text-align:center;max-width:420px;margin:0 auto}
+.adm-gate .ic{margin:0 auto 18px;color:var(--gold-deep)}
+.adm-gate h3{font:600 26px var(--serif);color:var(--plum);margin-bottom:8px}
+.adm-gate p{font:300 14px var(--sans);color:rgba(42,33,64,.65);margin-bottom:24px}
+.adm-gate input{width:100%;text-align:center;letter-spacing:.6em;font-size:22px;border:1px solid var(--line);padding:14px;background:#fff;outline:none}
+.adm-gate input:focus{border-color:var(--gold)}
+.adm-gate .hint{font:400 12px var(--sans);color:var(--gold-deep);margin-top:14px}
+.adm-gate.shake{animation:shake .45s}
+@keyframes shake{20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}
+.adm-body{display:none}
+.adm-body.show{display:block}
+.adm-tabs{display:flex;gap:8px;align-items:center}
+.adm-tabs button{font:500 11.5px var(--sans);letter-spacing:.2em;text-transform:uppercase;padding:10px 18px;border:1px solid var(--line);color:rgba(42,33,64,.6);transition:.3s}
+.adm-tabs button.on{background:var(--purple);border-color:var(--purple);color:#fff}
+.adm-stats{display:flex;flex-wrap:wrap;padding:8px 30px;border-bottom:1px solid var(--line);background:#fff}
+.adm-stats div{padding:20px 34px 20px 0;margin-right:34px;border-right:1px solid var(--line)}
+.adm-stats div:last-child{border:0}
+.adm-stats small{font:500 10px var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep)}
+.adm-stats b{display:block;font:600 32px var(--serif);color:var(--plum);line-height:1.15}
+.adm-tab{display:none;padding:26px 30px}
+.adm-tab.on{display:block}
+.adm-table{width:100%;border-collapse:collapse;background:#fff}
+.adm-table th{font:500 10.5px var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--gold-deep);text-align:left;padding:13px 14px;border-bottom:1px solid var(--line-gold)}
+.adm-table td{padding:12px 14px;border-bottom:1px solid var(--line);font:300 14px var(--sans);vertical-align:middle}
+.adm-table .a-name{font:500 15px var(--sans);color:var(--plum)}
+.a-thumb{width:44px;height:52px;background:var(--tint);display:grid;place-items:center}
+.a-thumb svg{width:28px}
+.price-in{width:86px;border:1px solid var(--line);padding:8px 10px;background:var(--beige);outline:none}
+.price-in:focus{border-color:var(--gold)}
+.sw{position:relative;width:44px;height:24px;display:inline-block}
+.sw input{opacity:0;width:0;height:0}
+.sw i{position:absolute;inset:0;background:rgba(42,33,64,.25);border-radius:12px;transition:.3s;cursor:pointer}
+.sw i::before{content:"";position:absolute;width:18px;height:18px;border-radius:50%;background:#fff;top:3px;left:3px;transition:.3s}
+.sw input:checked+i{background:var(--purple)}
+.sw input:checked+i::before{transform:translateX(20px);background:var(--gold)}
+.adm-form{display:grid;grid-template-columns:2fr 1fr 1fr 1fr .8fr auto;gap:10px;margin-top:26px;background:var(--lav-tint);padding:18px;border:1px solid var(--line)}
+.adm-form input,.adm-form select{border:1px solid var(--line);padding:10px 12px;background:#fff;outline:none;font-size:13.5px;min-width:0}
+.adm-form .btn{padding:0 20px}
+.order-card{background:#fff;border:1px solid var(--line);padding:18px 20px;margin-bottom:14px}
+.order-top{display:flex;flex-wrap:wrap;gap:10px 24px;align-items:baseline;justify-content:space-between}
+.order-top b{font:600 17px var(--serif);color:var(--purple)}
+.order-top small{font:300 12.5px var(--sans);color:rgba(42,33,64,.6)}
+.order-items{font:300 13.5px/1.8 var(--sans);color:rgba(42,33,64,.75);margin:10px 0}
+.order-bot{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;border-top:1px dashed var(--line);padding-top:12px}
+.order-bot b{font:600 19px var(--serif);color:var(--plum)}
+.status-sel{border:1px solid var(--line);padding:8px 12px;background:var(--beige);font:400 12.5px var(--sans);cursor:pointer}
+.adm-reset{margin-left:auto;font:500 11px var(--sans);letter-spacing:.16em;text-transform:uppercase;color:#b0475e;border-bottom:1px solid currentColor;padding-bottom:2px}
+
+/* ============ SEARCH OVERLAY ============ */
+.search-overlay{position:fixed;inset:0;z-index:430;background:rgba(247,243,238,.97);backdrop-filter:blur(10px);opacity:0;visibility:hidden;transition:.4s;overflow-y:auto}
+.search-overlay.open{opacity:1;visibility:visible}
+.so-in{max-width:760px;margin:0 auto;padding:14vh 22px 60px}
+.so-box{display:flex;align-items:center;gap:16px;border-bottom:2px solid var(--plum);padding-bottom:14px}
+.so-box .ic{color:var(--gold-deep)}
+.so-box input{flex:1;border:0;background:transparent;outline:none;font:500 clamp(1.4rem,3.4vw,2.1rem)/1.3 var(--serif);color:var(--plum);min-width:0}
+.so-box input::placeholder{color:rgba(42,33,64,.35);font-style:italic}
+.so-hint{font:300 12px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:rgba(42,33,64,.45);margin-top:14px}
+.so-results{margin-top:34px}
+.sr-row{display:flex;align-items:center;gap:18px;padding:13px 14px;border:1px solid transparent;cursor:pointer;transition:.25s}
+.sr-row:hover{border-color:var(--line-gold);background:#fff}
+.sr-thumb{width:52px;height:62px;flex:none;display:grid;place-items:center;background:var(--tint)}
+.sr-thumb svg{width:34px}
+.sr-row h4{font:600 17px var(--serif);color:var(--plum)}
+.sr-row small{font:300 12px var(--sans);color:rgba(42,33,64,.55)}
+.sr-price{margin-left:auto;font:600 16px var(--serif);color:var(--purple)}
+.sr-add{border:1px solid var(--purple);color:var(--purple);font:500 10.5px var(--sans);letter-spacing:.16em;text-transform:uppercase;padding:8px 14px;transition:.25s}
+.sr-add:hover{background:var(--purple);color:#fff}
+.so-none{font:italic 500 20px var(--serif);color:var(--purple);text-align:center;padding:40px 0}
+
+/* ============ TOAST & FLOAT ============ */
+.toasts{position:fixed;top:92px;right:20px;z-index:500;display:flex;flex-direction:column;gap:10px;pointer-events:none}
+.toast{display:flex;align-items:center;gap:12px;background:var(--plum);color:var(--beige);padding:14px 20px;box-shadow:0 18px 40px rgba(36,27,56,.35);font:400 14px var(--sans);max-width:340px;animation:tIn .45s var(--ease);border-left:3px solid var(--gold)}
+.toast .ic{color:var(--gold)}
+.toast.out{animation:tOut .4s var(--ease) forwards}
+@keyframes tIn{from{opacity:0;transform:translateX(40px)}}
+@keyframes tOut{to{opacity:0;transform:translateX(40px)}}
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:390;width:56px;height:56px;border-radius:50%;background:#1e9e52;color:#fff;display:grid;place-items:center;box-shadow:0 14px 34px rgba(30,158,82,.4);transition:.35s}
+.wa-float:hover{transform:translateY(-4px) scale(1.05)}
+.wa-float::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:1px solid rgba(30,158,82,.5);animation:ring 2.4s ease-out infinite}
+@keyframes ring{from{transform:scale(.85);opacity:1}to{transform:scale(1.35);opacity:0}}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1080px){
+  .hero{grid-template-columns:1fr;padding-top:110px;text-align:left;gap:20px}
+  .hero-stage{height:520px;order:2}
+  .scroll-hint{display:none}
+  .notes{grid-template-columns:repeat(3,auto);gap:8px 26px}
+  .about-grid,.why-grid,.faq-grid,.contact-grid,.cat-grid{grid-template-columns:1fr}
+  .why-left{position:static}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:880px){
+  .nav-links{display:none}
+  .menu-btn{display:grid}
+  .scent-panels{flex-direction:column;min-height:0}
+  .sp{flex:none !important}
+  .sp-ghost{position:static;transform:none;writing-mode:horizontal-tb;display:flex;justify-content:space-between;align-items:center;padding:22px 24px;font-size:1.35rem;letter-spacing:.14em}
+  .sp-ghost::after{content:"+";font:300 22px var(--sans);color:var(--gold-deep)}
+  .sp.active .sp-ghost{opacity:1}
+  .sp.active .sp-ghost::after{content:"–"}
+  .sp-inner{position:static;display:none;overflow:visible;padding:0 24px 32px}
+  .sp.active .sp-inner{display:block;transition:none}
+  .co-body{grid-template-columns:1fr}
+  .co-sum{border-left:0;border-top:1px solid var(--line)}
+  .adm-form{grid-template-columns:1fr 1fr}
+  .tool-right{margin-left:0;width:100%}
+  .shop-search{flex:1}.shop-search input{width:100%}
+}
+@media(max-width:560px){
+  .hero-ctas .btn{width:100%}
+  .p-grid{grid-template-columns:1fr 1fr;gap:14px}
+  .p-info{padding:14px}
+  .p-name{font-size:16.5px}
+  .add-btn{padding:10px 12px;font-size:10px}
+  .p-row{flex-direction:column;align-items:stretch;gap:8px}
+  .p-price{text-align:left}
+  .foot-grid{grid-template-columns:1fr}
+  .adm-stats div{border:0;padding:14px 24px 14px 0;margin-right:12px}
+  .adm-stats b{font-size:24px}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top"><i></i><b>PURE</b><span>FRESH</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">Collection</a>
+      <a href="#scents">Scents</a>
+      <a href="#cats">Spaces</a>
+      <a href="#shop">Shop</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-acts">
+      <button class="nav-btn" data-open="search" aria-label="Search"></button>
+      <button class="nav-btn" data-open="wish" aria-label="Wishlist"><span class="badge" id="wishCount"></span></button>
+      <button class="nav-btn" data-open="cart" aria-label="Cart"><span class="badge" id="cartCount"></span></button>
+      <button class="nav-btn menu-btn" data-open="menu" aria-label="Menu"></button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div class="m-menu" id="mMenu">
+  <button class="m-close" data-close aria-label="Close menu"></button>
+  <a href="#about" data-close>Collection <em>01</em></a>
+  <a href="#scents" data-close>Scents <em>02</em></a>
+  <a href="#cats" data-close>Spaces <em>03</em></a>
+  <a href="#shop" data-close>Shop <em>04</em></a>
+  <a href="#faq" data-close>FAQ <em>05</em></a>
+  <a href="#contact" data-close>Contact <em>06</em></a>
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <canvas id="petalCanvas" aria-hidden="true"></canvas>
+  <div class="hero-copy">
+    <span class="hero-kicker hero-fade" style="animation-delay:.1s">Heavenly Scent Collection</span>
+    <h1 class="hero-fade" style="animation-delay:.22s">PURE FRESH<span>Lavender · Jasmine · Sandalwood</span></h1>
+    <p class="hero-tag hero-fade" style="animation-delay:.36s"><b>Three Scents, Three Emotions, One Pure You.</b> Premium fragrances blended from high-quality essential oils — for every space, every moment, every you.</p>
+    <div class="hero-ctas hero-fade" style="animation-delay:.5s">
+      <a class="btn btn-primary" href="#shop">Shop Now</a>
+      <a class="btn btn-ghost" href="#scents">Explore Scents</a>
+    </div>
+    <div class="s-switch hero-fade" id="scentTabs" role="tablist" style="animation-delay:.64s">
+      <button data-scent="lavender" class="on" style="--dot:#9F86CE"><i></i>Lavender</button>
+      <button data-scent="jasmine" style="--dot:#D4AF37"><i></i>Jasmine</button>
+      <button data-scent="sandalwood" style="--dot:#B08355"><i></i>Sandalwood</button>
+    </div>
+    <dl class="notes hero-fade" id="heroNotes" style="animation-delay:.74s">
+      <div><dt>Top</dt><dd data-note="top">Bergamot &amp; Wild Herbs</dd></div>
+      <div><dt>Heart</dt><dd data-note="heart">French Lavender</dd></div>
+      <div><dt>Base</dt><dd data-note="base">Soft Musk &amp; Tonka</dd></div>
+    </dl>
+  </div>
+
+  <div class="hero-stage" id="heroStage" data-scent="lavender">
+    <div class="stage-circle"></div>
+    <div class="stage-ring"></div>
+    <!-- morphing flacon -->
+    <svg class="hero-bottle" viewBox="0 0 300 430" aria-label="Pure Fresh perfume bottle">
+      <defs><filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="1.4"/></filter></defs>
+      <g class="vapor" filter="url(#soft)">
+        <path d="M142,54 C130,44 154,36 142,24 C134,16 148,10 142,4"/>
+        <path d="M158,54 C170,44 148,36 160,24 C168,16 154,10 160,4"/>
+        <path d="M150,50 C144,40 156,34 150,22 C145,14 154,9 150,2"/>
+      </g>
+      <ellipse cx="150" cy="404" rx="82" ry="10" fill="rgba(62,42,99,.14)"/>
+      <rect x="130" y="58" width="40" height="50" rx="4" fill="#3E2A63"/>
+      <rect x="130" y="58" width="40" height="10" rx="4" fill="#4E3778"/>
+      <rect x="138" y="108" width="24" height="8" fill="#D4AF37"/>
+      <path d="M104,150 L196,150 L206,190 L206,370 Q206,392 184,392 L116,392 Q94,392 94,370 L94,190 Z" fill="rgba(255,255,255,.5)" stroke="rgba(91,58,142,.3)"/>
+      <path class="liq" style="fill:var(--liq)" d="M100,220 h100 v150 q0,16 -16,16 h-68 q-16,0 -16,-16 z"/>
+      <rect x="100" y="220" width="100" height="4" fill="rgba(255,255,255,.75)"/>
+      <circle class="bubble" cx="122" cy="370" r="3"/>
+      <circle class="bubble" cx="168" cy="378" r="2.4"/>
+      <circle class="bubble" cx="146" cy="384" r="2"/>
+      <path d="M118,150 L112,190 M182,150 L188,190" stroke="rgba(255,255,255,.5)" stroke-width="2"/>
+      <rect x="106" y="160" width="12" height="214" rx="6" fill="#fff" opacity=".5"/>
+      <rect x="118" y="248" width="64" height="66" fill="#FFFDF7" stroke="rgba(212,175,55,.6)"/>
+      <text x="150" y="270" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="10" letter-spacing="2.5" fill="#3E2A63">PURE FRESH</text>
+      <path d="M150,278 l5,6 -5,6 -5,-6 z" fill="#D4AF37"/>
+      <text id="heroBottleScent" x="150" y="300" text-anchor="middle" font-family="Cormorant Garamond,serif" font-style="italic" font-size="14" fill="#5B3A8E">Lavender</text>
+      <text x="150" y="310" text-anchor="middle" font-family="Jost,sans-serif" font-size="5.5" letter-spacing="2" fill="#A8871F">EAU DE PARFUM</text>
+    </svg>
+    <div class="hero-bot left" data-bot="lavender"></div>
+    <div class="hero-bot right" data-bot="jasmine"></div>
+    <div class="hero-bot left" data-bot="sandalwood" style="left:auto;right:6%"></div>
+  </div>
+  <div class="scroll-hint">Scroll</div>
+</section>
+
+<!-- marquee -->
+<div class="marquee" aria-hidden="true"><div class="mq-track" id="mqTrack"></div></div>
+
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="rv">
+      <span class="eyebrow">About The Collection</span>
+      <h2 class="sec-title">Discover Your <em>Signature</em> Scent</h2>
+      <p class="about-lead">Pure Fresh offers premium fragrances crafted with <b>high-quality essential oils</b>. Designed for human use, home spaces, and vehicles, our fragrances create unforgettable sensory experiences.</p>
+      <p class="about-quote">"One Collection For Every Space, Every Moment, Every You."</p>
+    </div>
+    <ul class="feat-list rv" style="transition-delay:.15s">
+      <li><span class="n">01</span><div><h4>Premium Essential Oils</h4><p>Carefully sourced botanicals, blended in small batches.</p></div></li>
+      <li><span class="n">02</span><div><h4>Long Lasting Fragrance</h4><p>High concentration formulas that linger for hours.</p></div></li>
+      <li><span class="n">03</span><div><h4>Safe &amp; Non-Toxic</h4><p>IFRA-conscious blends, gentle for everyday spaces.</p></div></li>
+      <li><span class="n">04</span><div><h4>Elegant Packaging</h4><p>Gift-ready glass flacons finished with gold detailing.</p></div></li>
+      <li><span class="n">05</span><div><h4>Multi-Purpose Usage</h4><p>One scent family for your skin, home and vehicle.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= SIGNATURE SCENTS ================= -->
+<section class="scents" id="scents">
+  <div class="wrap">
+    <div class="rv" style="text-align:center">
+      <span class="eyebrow" style="justify-content:center">Signature Scents</span>
+      <h2 class="sec-title">Three Scents. <em>Three Emotions.</em></h2>
+      <p class="sec-sub" style="margin:0 auto">Tap a panel to unfold each fragrance profile — every scent is a different version of you.</p>
+    </div>
+    <div class="scent-panels rv" id="scentPanels" style="transition-delay:.15s">
+      <article class="sp active" data-scent="lavender" style="--tint:#EFE9F6">
+        <div class="sp-ghost">Lavender</div>
+        <div class="sp-inner">
+          <span class="sp-num">No. 01</span>
+          <div class="sp-bot" data-bot-slot="lavender"></div>
+          <h3>Lavender</h3>
+          <p class="sp-latin">Lavandula angustifolia</p>
+          <p class="sp-desc">Calming and relaxing fragrance that reduces stress, soothes the mind, and promotes peaceful sleep.</p>
+          <ul class="sp-benefits"><li>Stress relief</li><li>Better relaxation</li><li>Fresh floral aroma</li></ul>
+          <button class="sp-link" data-scent-shop="lavender">Shop Lavender</button>
+        </div>
+      </article>
+      <article class="sp" data-scent="jasmine" style="--tint:#F8F1E2">
+        <div class="sp-ghost">Jasmine</div>
+        <div class="sp-inner">
+          <span class="sp-num">No. 02</span>
+          <div class="sp-bot" data-bot-slot="jasmine"></div>
+          <h3>Jasmine</h3>
+          <p class="sp-latin">Jasminum grandiflorum</p>
+          <p class="sp-desc">A bright and uplifting fragrance that boosts mood, energy, and positivity.</p>
+          <ul class="sp-benefits"><li>Mood enhancer</li><li>Floral sweetness</li><li>Everyday freshness</li></ul>
+          <button class="sp-link" data-scent-shop="jasmine">Shop Jasmine</button>
+        </div>
+      </article>
+      <article class="sp" data-scent="sandalwood" style="--tint:#F4EADD">
+        <div class="sp-ghost">Sandalwood</div>
+        <div class="sp-inner">
+          <span class="sp-num">No. 03</span>
+          <div class="sp-bot" data-bot-slot="sandalwood"></div>
+          <h3>Sandalwood</h3>
+          <p class="sp-latin">Santalum album</p>
+          <p class="sp-desc">Warm, grounded, luxurious scent with rich woody notes for a sophisticated experience.</p>
+          <ul class="sp-benefits"><li>Long-lasting aroma</li><li>Premium woody fragrance</li><li>Relaxing atmosphere</li></ul>
+          <button class="sp-link" data-scent-shop="sandalwood">Shop Sandalwood</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CATEGORIES ================= -->
+<section class="cats" id="cats">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Product Categories</span>
+      <h2 class="sec-title">Curated For <em>Every Space</em></h2>
+      <p class="sec-sub">Wherever life happens, Pure Fresh follows — on your skin, in your rooms, and on every drive.</p>
+      <div class="cat-tabs" id="catTabs">
+        <span class="cat-ind"></span>
+        <button data-tab="human" class="on">For You</button>
+        <button data-tab="home">For Your Home</button>
+        <button data-tab="vehicle">For Your Vehicle</button>
+      </div>
+    </div>
+    <div id="catPanes" class="rv" style="transition-delay:.15s"></div>
+  </div>
+</section>
+
+<!-- ================= WHY ================= -->
+<section class="why" id="why">
+  <div class="wrap why-grid">
+    <div class="why-left rv">
+      <span class="eyebrow">Why Choose Pure Fresh</span>
+      <h2 class="sec-title">The Pure Fresh <em>Standard</em></h2>
+      <p class="sec-sub">Every bottle that leaves our atelier carries the same promise: honest ingredients, refined design, and fragrance that truly lasts.</p>
+      <a class="btn btn-primary" href="#shop">Shop the Collection</a>
+    </div>
+    <ul class="why-list" id="whyList"></ul>
+  </div>
+</section>
+
+<!-- ================= SHOP ================= -->
+<section class="shop" id="shop">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Product Showcase</span>
+      <h2 class="sec-title">Shop The <em>Collection</em></h2>
+    </div>
+    <div class="shop-tools rv" style="transition-delay:.1s">
+      <div id="catChips" style="display:flex;gap:8px;flex-wrap:wrap">
+        <button class="chip on" data-chip-cat="all">All</button>
+        <button class="chip" data-chip-cat="human">Human Use</button>
+        <button class="chip" data-chip-cat="home">Home Use</button>
+        <button class="chip" data-chip-cat="vehicle">Vehicle Use</button>
+      </div>
+      <div id="scentChips" style="display:flex;gap:8px;flex-wrap:wrap">
+        <button class="chip on" data-chip-scent="all">All Scents</button>
+        <button class="chip" data-chip-scent="lavender" style="--dot:#9F86CE"><i></i>Lavender</button>
+        <button class="chip" data-chip-scent="jasmine" style="--dot:#D4AF37"><i></i>Jasmine</button>
+        <button class="chip" data-chip-scent="sandalwood" style="--dot:#B08355"><i></i>Sandalwood</button>
+      </div>
+      <div class="tool-right">
+        <div class="shop-search"><span data-ic="search"></span><input id="shopSearchInput" type="text" placeholder="Search products…" aria-label="Search products"></div>
+        <select class="sort-sel" id="sortSel" aria-label="Sort products">
+          <option value="feat">Featured</option>
+          <option value="lo">Price: Low → High</option>
+          <option value="hi">Price: High → Low</option>
+          <option value="az">Name: A → Z</option>
+        </select>
+      </div>
+    </div>
+    <p class="shop-count" id="shopCount"></p>
+    <div class="p-grid" id="productGrid"></div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testi" id="reviews">
+  <div class="wrap rv">
+    <div style="text-align:center">
+      <span class="eyebrow" style="justify-content:center">Testimonials</span>
+      <h2 class="sec-title">Words That <em>Linger</em></h2>
+    </div>
+    <div class="t-frame"><div class="t-c1" style="position:absolute;inset:0;pointer-events:none"></div>
+      <div class="t-viewport">
+        <div class="t-track" id="tTrack"></div>
+      </div>
+      <div class="t-nav">
+        <button class="t-arrow" id="tPrev" aria-label="Previous review"></button>
+        <div class="t-dots" id="tDots"></div>
+        <button class="t-arrow" id="tNext" aria-label="Next review"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="rv">
+      <span class="eyebrow">FAQ</span>
+      <h2 class="sec-title">Questions, <em>Answered</em></h2>
+      <p class="sec-sub">Everything you'd want to know before your first bottle arrives. Still curious? Message us any time on WhatsApp.</p>
+    </div>
+    <div id="faqList" class="rv" style="transition-delay:.12s"></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="rv">
+      <span class="eyebrow">Contact</span>
+      <h2 class="sec-title">Get In <em>Touch</em></h2>
+      <p class="sec-sub">Wholesale, gifting, or a simple scent question — our atelier replies within 24 hours.</p>
+    </div>
+    <div class="contact-grid">
+      <form class="rv" id="contactForm" novalidate>
+        <div class="field"><label for="cfName">Name</label><input id="cfName" type="text" autocomplete="name"><span class="err">Please enter your name.</span></div>
+        <div class="field"><label for="cfEmail">Email</label><input id="cfEmail" type="email" autocomplete="email"><span class="err">Please enter a valid email.</span></div>
+        <div class="field"><label for="cfPhone">Phone</label><input id="cfPhone" type="tel" autocomplete="tel"><span class="err">Please enter a valid phone number.</span></div>
+        <div class="field"><label for="cfMsg">Message</label><textarea id="cfMsg"></textarea><span class="err">Please write a short message.</span></div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+      <aside class="contact-side rv" style="transition-delay:.12s">
+        <div class="c-block"><span data-ic="pin"></span><div><h5>Visit The Atelier</h5><p>No. 24, Blossom Lane, Colombo 07, Sri Lanka</p></div></div>
+        <div class="c-block"><span data-ic="phone"></span><div><h5>Call / WhatsApp</h5><p>+94 77 123 4567</p></div></div>
+        <div class="c-block"><span data-ic="mail"></span><div><h5>Email</h5><p>hello@purefresh.scents</p></div></div>
+        <div class="c-social">
+          <a href="https://wa.me/94771234567" target="_blank" rel="noopener" aria-label="WhatsApp" data-ic="whatsapp"></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" data-ic="facebook"></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" data-ic="instagram"></a>
+        </div>
+        <a class="btn btn-wa" style="width:100%" href="https://wa.me/94771234567?text=Hello%20Pure%20Fresh!%20I%27d%20love%20to%20know%20more%20about%20your%20collection." target="_blank" rel="noopener"><span data-ic="whatsapp"></span> Chat on WhatsApp</a>
+        <div class="map-box"><iframe title="Pure Fresh location map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=79.846%2C6.894%2C79.876%2C6.922&amp;layer=mapnik&amp;marker=6.908%2C79.861"></iframe></div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <p class="foot-tag">"Make Every Space A <span>Scent To Remember.</span>"</p>
+    <div class="foot-grid">
+      <div>
+        <span class="foot-brand"><i></i>PURE FRESH</span>
+        <p class="foot-about">Premium essential-oil fragrances for you, your home and your vehicle — crafted to turn ordinary moments into memorable ones.</p>
+        <div class="foot-social">
+          <a href="https://wa.me/94771234567" target="_blank" rel="noopener" aria-label="WhatsApp" data-ic="whatsapp"></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook" data-ic="facebook"></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram" data-ic="instagram"></a>
+        </div>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <a href="#about">About Us</a>
+        <a href="#shop">Shop</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h5>Support</h5>
+        <a href="#faq">FAQ</a>
+        <a href="#" data-info="privacy">Privacy Policy</a>
+        <a href="#" data-info="terms">Terms &amp; Conditions</a>
+        <a href="#" data-open="admin">Admin</a>
+      </div>
+      <div>
+        <h5>Join The Scent List</h5>
+        <p style="font:300 14px/1.7 var(--sans)">New blends, private launches and seasonal gifts — straight to your inbox.</p>
+        <form class="news-row" id="newsForm"><input type="email" placeholder="Your email address" aria-label="Email for newsletter"><button type="submit">Join</button></form>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year"></span> Pure Fresh. All rights reserved.</span>
+      <span>One Collection For Every Space, Every Moment, Every You.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= DRAWERS ================= -->
+<div class="scrim" id="scrim"></div>
+
+<aside class="drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="drawer-head"><h3>Your Cart <span id="cartTitleCount"></span></h3><button class="x-btn" data-close aria-label="Close cart"></button></div>
+  <div class="drawer-body" id="cartItems"></div>
+  <div class="drawer-foot" id="cartFoot">
+    <div class="d-total"><span>Subtotal</span><b id="cartSubtotal">$0.00</b></div>
+    <p class="d-note">Shipping calculated at checkout · Free over $75.00</p>
+    <button class="btn btn-primary" id="toCheckout">Secure Checkout</button>
+    <a class="btn btn-wa" id="waOrder" target="_blank" rel="noopener"><span data-ic="whatsapp"></span> Order via WhatsApp</a>
+  </div>
+</aside>
+
+<aside class="drawer" id="wishDrawer" aria-label="Wishlist">
+  <div class="drawer-head"><h3>Wishlist <span id="wishTitleCount"></span></h3><button class="x-btn" data-close aria-label="Close wishlist"></button></div>
+  <div class="drawer-body" id="wishItems"></div>
+</aside>
+
+<!-- ================= CHECKOUT MODAL ================= -->
+<div class="modal" id="checkoutModal" role="dialog" aria-label="Checkout">
+  <div class="modal-panel">
+    <div class="modal-head"><h3>Checkout</h3><button class="x-btn" data-close aria-label="Close checkout"></button></div>
+    <div class="co-body" id="coMain">
+      <form class="co-form" id="coForm" novalidate>
+        <h4>Delivery Details</h4>
+        <div class="field"><label>Full Name</label><input id="coName" autocomplete="name"><span class="err">Required.</span></div>
+        <div class="field"><label>Email</label><input id="coEmail" type="email" autocomplete="email"><span class="err">Valid email required.</span></div>
+        <div class="field"><label>Phone</label><input id="coPhone" type="tel" autocomplete="tel"><span class="err">Valid phone required.</span></div>
+        <div class="field"><label>Delivery Address</label><textarea id="coAddr" style="min-height:70px"></textarea><span class="err">Required.</span></div>
+        <h4>Payment Method</h4>
+        <div class="pay-opts" id="payOpts">
+          <label class="pay-opt sel"><input type="radio" name="pay" value="card" checked><span><b>Card — Visa / Mastercard</b><small>Processed securely via Stripe</small></span></label>
+          <label class="pay-opt"><input type="radio" name="pay" value="payhere"><span><b>PayHere</b><small>Local gateway · Cards, eZ Cash &amp; more</small></span></label>
+          <label class="pay-opt"><input type="radio" name="pay" value="cod"><span><b>Cash on Delivery</b><small>Pay when your fragrances arrive</small></span></label>
+        </div>
+        <div id="cardFields">
+          <div class="field f-num"><label>Card Number</label><input id="cardNum" inputmode="numeric" placeholder="4242 4242 4242 4242" maxlength="23"><span class="err">Enter a 16-digit card number.</span></div>
+          <div class="field"><label>Expiry</label><input id="cardExp" placeholder="MM/YY" maxlength="5"><span class="err">MM/YY required.</span></div>
+          <div class="field"><label>CVC</label><input id="cardCvc" inputmode="numeric" placeholder="•••" maxlength="4"><span class="err">3–4 digits.</span></div>
+        </div>
+        <p class="demo-note">Demo checkout — no real payment is processed. Connect your live Stripe or PayHere keys to accept payments.</p>
+        <button type="submit" class="btn btn-primary" style="width:100%" id="payBtn">Pay Now</button>
+      </form>
+      <aside class="co-sum">
+        <h4>Order Summary</h4>
+        <div id="coItems"></div>
+        <div class="sum-div">
+          <div class="sum-row"><span>Subtotal</span><b id="coSubtotal"></b></div>
+          <div class="sum-row"><span>Shipping</span><b id="coShip"></b></div>
+          <div class="sum-row"><span>Total</span><b id="coTotal"></b></div>
+        </div>
+      </aside>
+    </div>
+    <div class="co-success" id="coSuccess">
+      <svg class="ok-ring" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46"/><path d="M32 51 l13 13 24 -27"/></svg>
+      <h3>Order Confirmed</h3>
+      <p class="oid" id="okId"></p>
+      <p id="okMsg">Thank you for choosing Pure Fresh. A confirmation has been sent to your email, and your fragrances are being prepared with care.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a class="btn btn-wa" id="okWa" target="_blank" rel="noopener"><span data-ic="whatsapp"></span> Confirm on WhatsApp</a>
+        <button class="btn btn-ghost" data-close>Continue Shopping</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= ADMIN MODAL ================= -->
+<div class="modal" id="adminModal" role="dialog" aria-label="Admin dashboard">
+  <div class="modal-panel admin-panel">
+    <div class="modal-head">
+      <h3>Admin Dashboard</h3>
+      <div class="adm-tabs" id="admTabs" style="display:none">
+        <button class="on" data-atab="products">Products</button>
+        <button data-atab="orders">Orders</button>
+        <button class="adm-reset" id="admReset">Reset demo data</button>
+      </div>
+      <button class="x-btn" data-close aria-label="Close admin"></button>
+    </div>
+    <div class="adm-gate" id="admGate">
+      <span data-ic="lock"></span>
+      <h3>Restricted Area</h3>
+      <p>Enter your PIN to manage products and orders.</p>
+      <input type="password" id="admPin" maxlength="6" placeholder="••••" aria-label="Admin PIN">
+      <p class="hint">Demo PIN: 1234</p>
+    </div>
+    <div class="adm-body" id="admBody">
+      <div class="adm-stats" id="admStats"></div>
+      <div class="adm-tab on" data-apane="products" id="admProducts"></div>
+      <div class="adm-tab" data-apane="orders" id="admOrders"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= INFO MODAL (privacy / terms) ================= -->
+<div class="modal" id="infoModal" role="dialog">
+  <div class="modal-panel" style="width:min(640px,100%)">
+    <div class="modal-head"><h3 id="infoTitle"></h3><button class="x-btn" data-close aria-label="Close"></button></div>
+    <div style="padding:28px 30px" id="infoBody"></div>
+  </div>
+</div>
+
+<!-- ================= SEARCH OVERLAY ================= -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="so-in">
+    <div class="so-box">
+      <span data-ic="search"></span>
+      <input id="searchInput" type="text" placeholder="Search fragrances… try “lavender”" aria-label="Search products">
+      <button class="x-btn" data-close aria-label="Close search"></button>
+    </div>
+    <p class="so-hint">Press Enter to jump to the first match · Esc to close</p>
+    <div class="so-results" id="searchResults"></div>
+  </div>
+</div>
+
+<a class="wa-float" href="https://wa.me/94771234567?text=Hello%20Pure%20Fresh!%20I%27d%20like%20to%20order%20a%20fragrance." target="_blank" rel="noopener" aria-label="Chat on WhatsApp" data-ic="whatsapp"></a>
+<div class="toasts" id="toasts"></div>
+
+<script>
+/* ============================================================
+   PURE FRESH — storefront logic
+============================================================ */
+'use strict';
+
+/* ---------- Icons (inline stroke set) ---------- */
+const ICONS = {
+  search:'<circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/>',
+  heart:'<path d="M12 20.5C7 16.5 3.5 13.3 3.5 9.6 3.5 7 5.5 5 8 5c1.6 0 3.1.9 4 2.2C12.9 5.9 14.4 5 16 5c2.5 0 4.5 2 4.5 4.6 0 3.7-3.5 6.9-8.5 10.9z"/>',
+  bag:'<path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/>',
+  menu:'<path d="M4 7h16M4 12h16M4 17h10"/>',
+  x:'<path d="M6 6l12 12M18 6L6 18"/>',
+  plus:'<path d="M12 5v14M5 12h14"/>',
+  minus:'<path d="M5 12h14"/>',
+  check:'<path d="M5 12.5l4.5 4.5L19 7.5"/>',
+  chev:'<path d="M6 9l6 6 6-6"/>',
+  arrow:'<path d="M4 12h15M13 6l6 6-6 6"/>',
+  trash:'<path d="M4 7h16M9 7V5h6v2M7 7l1 13h8l1-13"/><path d="M10 11v5M14 11v5"/>',
+  drop:'<path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/>',
+  clock:'<circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/>',
+  wind:'<path d="M3 8h10a3 3 0 1 0-3-3M3 12h15a3 3 0 1 1-3 3M3 16h8a2.5 2.5 0 1 1-2.5 2.5"/>',
+  shield:'<path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/>',
+  gift:'<rect x="4" y="10" width="16" height="10" rx="1"/><path d="M4 10h16M12 10v10M12 10c0 0-4.2.2-5.2-1.8S8 4.6 9.8 5.6 12 10 12 10zm0 0c0 0 4.2.2 5.2-1.8S16 4.6 14.2 5.6 12 10 12 10z"/>',
+  gem:'<path d="M7 4h10l4 5-9 11L3 9l4-5z"/><path d="M3 9h18M12 20 8.5 9M12 20l3.5-11"/>',
+  phone:'<path d="M5 4h4l1.5 4L8 10a12 12 0 0 0 6 6l2-2.5L20 15v4a1.5 1.5 0 0 1-1.7 1.5C10.5 19.6 4.4 13.5 3.5 5.7A1.5 1.5 0 0 1 5 4z"/>',
+  mail:'<rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="M4 7l8 6 8-6"/>',
+  pin:'<path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>',
+  lock:'<rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/>',
+  box:'<path d="M3.5 7.5 12 3l8.5 4.5v9L12 21l-8.5-4.5z"/><path d="M3.5 7.5 12 12l8.5-4.5M12 12v9"/>',
+  whatsapp:'<path fill="currentColor" stroke="none" d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.1 14.9l-.5-.3-3 .8.8-2.9-.3-.5A8 8 0 0 1 12 4zm-3.1 4.2c-.2 0-.5.1-.7.4-.3.3-.9 1-.9 2.1 0 1.2.9 2.4 1 2.6.1.2 1.8 2.9 4.5 3.9 2.2.9 2.7.7 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.4l-2-1c-.3-.1-.5-.2-.7.1l-.9 1.2c-.2.2-.3.2-.6.1a6.8 6.8 0 0 1-3.4-2.9c-.1-.3 0-.5.2-.7l.9-1c.2-.2.1-.5 0-.7l-1-2.3c-.2-.5-.4-.5-.6-.5h-.3z"/>',
+  facebook:'<path fill="currentColor" stroke="none" d="M14 8.5V7c0-.8.2-1.2 1.3-1.2H17V3h-2.6C11.6 3 10.5 4.5 10.5 7v1.5H8.5V12h2v9H14v-9h2.5l.4-3.5H14z"/>',
+  instagram:'<rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/>'
+};
+const I = (n,s=18)=>`<svg class="ic" width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${ICONS[n]}</svg>`;
+const STAR = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8-5.2-2.8-5.2 2.8 1-5.8L3.5 9.7l5.9-.8z"/></svg>';
+
+/* ---------- Data ---------- */
+const SCENTS = {
+  lavender:  {name:'Lavender',   liq:'#B8A2D6', deep:'#8F76C2', tint:'#EFE9F6', dot:'#9F86CE', vap:'#C9B7E4'},
+  jasmine:   {name:'Jasmine',    liq:'#F0E3C6', deep:'#DCC493', tint:'#F8F1E2', dot:'#D4AF37', vap:'#E6D6A8'},
+  sandalwood:{name:'Sandalwood', liq:'#DDB68C', deep:'#B08355', tint:'#F4EADD', dot:'#B08355', vap:'#D9B48C'}
+};
+const CATS = {human:'For You', home:'Home', vehicle:'Vehicle'};
+const TYPE_LABEL = {spray:'Eau de Parfum · 50 ml', diffuser:'Reed Diffuser · 150 ml', aroma:'Aroma Decanter · 120 ml', hanging:'Car Pendant · 12 ml', jar:'Vented Jar · 40 g'};
+const DEFAULT_PRODUCTS = [
+  {id:1, name:'Lavender Perfume Spray',    scent:'lavender',   cat:'human',   type:'spray',    price:48},
+  {id:2, name:'Jasmine Perfume Spray',     scent:'jasmine',    cat:'human',   type:'spray',    price:52},
+  {id:3, name:'Sandalwood Perfume Spray',  scent:'sandalwood', cat:'human',   type:'spray',    price:56},
+  {id:4, name:'Lavender Reed Diffuser',    scent:'lavender',   cat:'home',    type:'diffuser', price:38},
+  {id:5, name:'Jasmine Reed Diffuser',     scent:'jasmine',    cat:'home',    type:'diffuser', price:38},
+  {id:6, name:'Sandalwood Reed Diffuser',  scent:'sandalwood', cat:'home',    type:'diffuser', price:42},
+  {id:7, name:'Lavender Aroma Bottle',     scent:'lavender',   cat:'home',    type:'aroma',    price:34},
+  {id:8, name:'Jasmine Aroma Bottle',      scent:'jasmine',    cat:'home',    type:'aroma',    price:34},
+  {id:9, name:'Sandalwood Aroma Bottle',   scent:'sandalwood', cat:'home',    type:'aroma',    price:36},
+  {id:10,name:'Lavender Hanging Bottle',   scent:'lavender',   cat:'vehicle', type:'hanging',  price:18},
+  {id:11,name:'Sandalwood Hanging Bottle', scent:'sandalwood', cat:'vehicle', type:'hanging',  price:18},
+  {id:12,name:'Jasmine Dashboard Jar',     scent:'jasmine',    cat:'vehicle', type:'jar',      price:22},
+  {id:13,name:'Sandalwood Dashboard Jar',  scent:'sandalwood', cat:'vehicle', type:'jar',      price:22}
+];
+const WHY = [
+  ['drop','Made with Premium Essential Oils','Carefully sourced botanicals blended in small batches for depth and purity.'],
+  ['clock','Long Lasting Fragrance','High-concentration formulas that keep spaces scented for hours, weeks, or months.'],
+  ['wind','Refreshes Air Naturally','No harsh propellants — fragrance that gently lifts the atmosphere around you.'],
+  ['shield','Safe & Non-Toxic','IFRA-conscious blends, free from harmful additives. Kind to everyday living.'],
+  ['gift','Perfect Gift for Loved Ones','Gold-finished, gift-ready packaging that needs no wrapping paper.'],
+  ['gem','Elegant Premium Design','Sculptural glass flacons designed to be displayed, not hidden away.']
+];
+const TESTIMONIALS = [
+  {q:'Pure Fresh Lavender transformed my bedroom atmosphere. I fall asleep faster and wake up feeling genuinely rested.', a:'Amara Silva', r:'Homemaker · Colombo'},
+  {q:'The vehicle fragrance keeps my car smelling amazing for weeks. Passengers always ask what that wonderful scent is.', a:'Dinesh Perera', r:'Ride-hailing Driver · Kandy'},
+  {q:'Premium quality packaging and long-lasting scents. The sandalwood diffuser made my studio feel like a boutique hotel.', a:'Nethmi Rathnayake', r:'Design Consultant · Galle'}
+];
+const FAQS = [
+  ['How long does the fragrance last?','Our eau de parfums wear beautifully for 8–12 hours on skin. Reed diffusers fragrance a room continuously for 10–12 weeks, and our vehicle fragrances keep cars fresh for 4–6 weeks depending on climate.'],
+  ['Are the products safe?','Yes. Every blend is IFRA-conscious, non-toxic, and free from harsh additives. Our home and vehicle ranges are flame-free and heat-safe. As with all fragrances, keep bottles out of reach of small children and pets.'],
+  ['Which scent is best for relaxation?','Lavender is our relaxation signature — its soft floral aroma is traditionally used to reduce stress, soothe the mind, and promote peaceful sleep. Try the Lavender Reed Diffuser in bedrooms for the fullest effect.'],
+  ['Can I use these in vehicles?','Absolutely. Our Vehicle Collection — hanging bottles and vented dashboard jars — is designed specifically for cars: compact, heat-safe, and long-lasting. They eliminate odours rather than masking them.'],
+  ['Are the fragrances made from essential oils?','Yes, all Pure Fresh fragrances are blended with premium essential oils — lavender from Provence-style farms, night-blooming jasmine, and genuine sandalwood notes — balanced with safe, high-quality aroma compounds for longevity.']
+];
+const WA_NUM = '94771234567';
+const waLink = t => `https://wa.me/${WA_NUM}?text=${encodeURIComponent(t)}`;
+const money = n => '$' + n.toFixed(2);
+
+/* ---------- SVG product illustration builder ---------- */
+function bottleSVG(type, scent){
+  const s = SCENTS[scent], sname = s.name;
+  const stroke = 'rgba(91,58,142,.28)';
+  const shadow = cy => `<ellipse cx="100" cy="${cy}" rx="${type==='jar'?48:44}" ry="7" fill="rgba(62,42,99,.10)"/>`;
+  const label = (x,y,w,h,sub)=>`
+    <rect x="${x}" y="${y}" width="${w}" height="${h}" rx="2" fill="#FFFDF7" stroke="rgba(212,175,55,.55)"/>
+    <text x="${x+w/2}" y="${y+h*.32}" text-anchor="middle" font-family="Cormorant Garamond,serif" font-size="6.5" letter-spacing="1.4" fill="#3E2A63">PURE FRESH</text>
+    <text x="${x+w/2}" y="${y+h*.6}" text-anchor="middle" font-family="Cormorant Garamond,serif" font-style="italic" font-size="8" fill="#5B3A8E">${sname}</text>
+    <text x="${x+w/2}" y="${y+h*.8}" text-anchor="middle" font-family="Jost,sans-serif" font-size="3.8" letter-spacing="1" fill="#A8871F">${sub}</text>`;
+  let art = '';
+  if(type==='spray'){
+    art = shadow(224) + `
+    <rect x="92" y="16" width="16" height="10" rx="2" fill="#3E2A63"/>
+    <rect x="83" y="28" width="34" height="26" rx="3" fill="#3E2A63"/>
+    <rect x="90" y="54" width="20" height="7" fill="#D4AF37"/>
+    <rect x="58" y="61" width="84" height="156" rx="12" fill="rgba(255,255,255,.55)" stroke="${stroke}"/>
+    <rect x="64" y="112" width="72" height="99" rx="8" fill="${s.liq}" opacity=".85"/>
+    <rect x="64" y="112" width="72" height="4" fill="rgba(255,255,255,.7)"/>
+    <rect x="67" y="72" width="9" height="128" rx="4.5" fill="#fff" opacity=".5"/>
+    ${label(76,122,48,44,'EAU DE PARFUM')}`;
+  } else if(type==='diffuser'){
+    art = shadow(226) + `
+    <g stroke-linecap="round" stroke-width="2.5">
+      <line x1="100" y1="102" x2="58"  y2="30" stroke="#A97C50"/>
+      <line x1="100" y1="102" x2="79"  y2="24" stroke="#8A6240"/>
+      <line x1="100" y1="102" x2="100" y2="20" stroke="#A97C50"/>
+      <line x1="100" y1="102" x2="121" y2="24" stroke="#8A6240"/>
+      <line x1="100" y1="102" x2="142" y2="30" stroke="#A97C50"/>
+    </g>
+    <path d="M87,103 h26 v18 c12,7 19,20 19,33 v54 a13,13 0 0 1 -13,13 h-38 a13,13 0 0 1 -13,-13 v-54 c0,-13 7,-26 19,-33 z" fill="rgba(255,255,255,.55)" stroke="${stroke}"/>
+    <path d="M74,172 h52 v36 a10,10 0 0 1 -10,10 h-32 a10,10 0 0 1 -10,-10 z" fill="${s.liq}" opacity=".85"/>
+    <rect x="74" y="170" width="52" height="3" fill="rgba(255,255,255,.7)"/>
+    <rect x="84" y="96" width="32" height="7" rx="3" fill="#C9A24B"/>
+    <rect x="80" y="140" width="8" height="66" rx="4" fill="#fff" opacity=".45"/>`;
+  } else if(type==='aroma'){
+    art = shadow(224) + `
+    <rect x="93" y="52" width="14" height="12" fill="#C9A24B"/>
+    <circle cx="100" cy="40" r="13" fill="#D4AF37"/>
+    <circle cx="96" cy="36" r="4" fill="#fff" opacity=".55"/>
+    <rect x="60" y="64" width="80" height="150" rx="24" fill="rgba(255,255,255,.55)" stroke="${stroke}"/>
+    <rect x="66" y="116" width="68" height="92" rx="18" fill="${s.liq}" opacity=".85"/>
+    <rect x="66" y="116" width="68" height="4" rx="2" fill="rgba(255,255,255,.7)"/>
+    <rect x="70" y="78" width="9" height="122" rx="4.5" fill="#fff" opacity=".5"/>
+    ${label(74,132,52,40,'AROMA DECANTER')}`;
+  } else if(type==='hanging'){
+    art = shadow(168) + `
+    <path d="M100,10 c-12,9 -12,24 0,33 c12,-9 12,-24 0,-33 z" fill="none" stroke="#D4AF37" stroke-width="2.5"/>
+    <circle cx="100" cy="45" r="3" fill="#D4AF37"/>
+    <rect x="88" y="50" width="24" height="16" rx="3" fill="#8B5E3C"/>
+    <rect x="88" y="50" width="24" height="5" fill="#A97C50"/>
+    <path d="M85,66 h30 v12 c8,7 11,16 11,26 v30 a16,16 0 0 1 -16,16 h-20 a16,16 0 0 1 -16,-16 v-30 c0,-10 3,-19 11,-26 z" fill="rgba(255,255,255,.55)" stroke="${stroke}"/>
+    <path d="M80,112 h40 v22 a12,12 0 0 1 -12,12 h-16 a12,12 0 0 1 -12,-12 z" fill="${s.liq}" opacity=".85"/>
+    <line x1="100" y1="150" x2="100" y2="155" stroke="#D4AF37" stroke-width="2"/>
+    <circle cx="100" cy="159" r="4" fill="#D4AF37"/>`;
+  } else { /* jar */
+    art = shadow(182) + `
+    <ellipse cx="100" cy="92" rx="42" ry="10" fill="#A97C50"/>
+    <ellipse cx="100" cy="88" rx="42" ry="10" fill="#8B5E3C"/>
+    <ellipse cx="100" cy="84" rx="11" ry="4" fill="#8B5E3C"/>
+    <path d="M58,96 h84 v56 a14,14 0 0 1 -14,14 h-56 a14,14 0 0 1 -14,-14 z" fill="rgba(255,255,255,.55)" stroke="${stroke}"/>
+    <rect x="58" y="96" width="84" height="5" fill="#D4AF37"/>
+    <path d="M64,130 h72 v22 a10,10 0 0 1 -10,10 h-52 a10,10 0 0 1 -10,-10 z" fill="${s.liq}" opacity=".85"/>
+    <circle cx="100" cy="140" r="15" fill="#FFFDF7" stroke="rgba(212,175,55,.55)"/>
+    <path d="M100,133 l6,7 -6,7 -6,-7 z" fill="#5B3A8E"/>
+    <rect x="66" y="106" width="8" height="50" rx="4" fill="#fff" opacity=".5"/>`;
+  }
+  return `<svg viewBox="0 0 200 240" role="img" aria-label="${sname} ${type}">${art}</svg>`;
+}
+
+/* ---------- Botanical illustrations ---------- */
+function botLavender(){
+  const pts=[[60,28],[51,40],[69,42],[47,56],[73,58],[45,74],[75,76],[49,92],[71,94],[54,108],[66,110],[58,124]];
+  let buds='';
+  pts.forEach((p,i)=>{ buds+=`<ellipse cx="${p[0]}" cy="${p[1]}" rx="6" ry="10" fill="${i%2?'#B8A2D6':'#8F76C2'}" transform="rotate(${p[0]<60?-16:16} ${p[0]} ${p[1]})"/>`; });
+  return `<svg viewBox="0 0 120 240" aria-hidden="true">
+    <path d="M60,235 C56,190 64,165 60,132" stroke="#6B7A4A" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M59,196 C48,190 40,191 34,198" stroke="#6B7A4A" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <path d="M61,178 C72,172 80,173 86,180" stroke="#6B7A4A" stroke-width="2.4" fill="none" stroke-linecap="round"/>${buds}</svg>`;
+}
+function botJasmine(){
+  const flower=(cx,cy,sc)=>{ let p='';
+    for(let k=0;k<5;k++) p+=`<g transform="rotate(${k*72})"><ellipse cx="0" cy="-13" rx="7" ry="14" fill="#FFFFFF" stroke="#E2D9C4" stroke-width="1"/></g>`;
+    return `<g transform="translate(${cx},${cy}) scale(${sc})">${p}<circle r="5" fill="#D4AF37"/><circle r="2" fill="#A8871F"/></g>`; };
+  return `<svg viewBox="0 0 160 210" aria-hidden="true">
+    <path d="M28,205 C62,160 72,100 96,48" stroke="#5F7247" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M60,140 C84,138 104,132 122,118" stroke="#5F7247" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+    <ellipse cx="44" cy="176" rx="6" ry="16" fill="#7C8F5B" transform="rotate(-38 44 176)"/>
+    <ellipse cx="88" cy="104" rx="6" ry="16" fill="#7C8F5B" transform="rotate(30 88 104)"/>
+    ${flower(96,44,1)}${flower(40,80,.82)}${flower(124,116,.9)}</svg>`;
+}
+function botSandal(){
+  return `<svg viewBox="0 0 210 170" aria-hidden="true">
+    <circle cx="62" cy="88" r="48" fill="#D9B48C" stroke="#B08355" stroke-width="2"/>
+    <circle cx="62" cy="88" r="35" fill="none" stroke="#B08355" stroke-width="1.4" opacity=".55"/>
+    <circle cx="62" cy="88" r="23" fill="none" stroke="#B08355" stroke-width="1.4" opacity=".55"/>
+    <circle cx="62" cy="88" r="11" fill="none" stroke="#B08355" stroke-width="1.4" opacity=".7"/>
+    <circle cx="62" cy="88" r="3" fill="#9A6B45"/>
+    <rect x="116" y="34" width="82" height="102" rx="7" fill="#C89B6D" stroke="#A97C50" stroke-width="1.6"/>
+    <path d="M124,52 C146,58 168,50 190,58 M124,76 C150,84 168,74 190,82 M124,102 C148,108 164,98 190,106 M124,124 C144,130 170,122 190,128" stroke="#A97C50" stroke-width="1.6" fill="none" opacity=".65"/>
+    <ellipse cx="158" cy="92" rx="9" ry="6" fill="#9A6B45" opacity=".7"/></svg>`;
+}
+const BOTS = {lavender:botLavender, jasmine:botJasmine, sandalwood:botSandal};
+
+/* ---------- State & persistence ---------- */
+const LS = {get(k,f){try{const v=localStorage.getItem(k);return v?JSON.parse(v):f}catch(e){return f}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+let overrides = LS.get('pf_overrides', {});
+let custom    = LS.get('pf_custom', []);
+let products  = [...DEFAULT_PRODUCTS, ...custom].map(p => overrides[p.id] ? {...p, ...overrides[p.id]} : {...p, stock: p.stock !== false});
+let cart      = LS.get('pf_cart', []);
+let wishlist  = LS.get('pf_wishlist', []);
+let orders    = LS.get('pf_orders', []);
+let adminAuth = false;
+
+const saveAll = ()=>{ LS.set('pf_cart',cart); LS.set('pf_wishlist',wishlist); LS.set('pf_orders',orders); LS.set('pf_overrides',overrides); LS.set('pf_custom',custom); };
+const prod = id => products.find(p=>p.id===+id);
+
+/* ---------- Toasts ---------- */
+function toast(msg, icon='check'){
+  const t = document.createElement('div');
+  t.className='toast'; t.innerHTML = I(icon,20)+`<span>${msg}</span>`;
+  document.getElementById('toasts').appendChild(t);
+  setTimeout(()=>{ t.classList.add('out'); setTimeout(()=>t.remove(),400); }, 3200);
+}
+
+/* ---------- Shop rendering ---------- */
+let fCat='all', fScent='all', fQuery='', fSort='feat';
+function filteredProducts(){
+  let list = products.filter(p =>
+    (fCat==='all' || p.cat===fCat) &&
+    (fScent==='all' || p.scent===fScent) &&
+    (!fQuery || (p.name+' '+SCENTS[p.scent].name+' '+CATS[p.cat]).toLowerCase().includes(fQuery))
+  );
+  if(fSort==='lo') list.sort((a,b)=>a.price-b.price);
+  if(fSort==='hi') list.sort((a,b)=>b.price-a.price);
+  if(fSort==='az') list.sort((a,b)=>a.name.localeCompare(b.name));
+  return list;
+}
+function cardHTML(p, i){
+  const inWish = wishlist.includes(p.id);
+  const out = p.stock===false;
+  return `<article class="p-card" data-id="${p.id}" style="animation-delay:${Math.min(i*60,360)}ms">
+    <div class="p-media" style="--tint:${SCENTS[p.scent].tint}">
+      ${bottleSVG(p.type,p.scent)}
+      <span class="p-tag">${CATS[p.cat]}</span>
+      <button class="wish-btn ${inWish?'on':''}" data-wish="${p.id}" aria-label="Toggle wishlist">${I('heart',18)}</button>
+      ${out?'<span class="oos-badge">Out of stock</span>':''}
+    </div>
+    <div class="p-info">
+      <span class="p-scent">${SCENTS[p.scent].name} — ${CATS[p.cat]}</span>
+      <h3 class="p-name">${p.name}</h3>
+      <p class="p-desc">${TYPE_LABEL[p.type]||p.desc||''}</p>
+      <div class="p-row">
+        <span class="p-price">${money(p.price)}</span>
+        <button class="add-btn" data-add="${p.id}" ${out?'disabled':''}>${I('bag',14)} Add to Cart</button>
+      </div>
+    </div>
+  </article>`;
+}
+function renderShop(){
+  const list = filteredProducts();
+  const grid = document.getElementById('productGrid');
+  grid.innerHTML = list.length ? list.map(cardHTML).join('') :
+    `<div class="no-results"><h3>No fragrances match your filters</h3><p>Try clearing a filter or searching a different scent.</p></div>`;
+  document.getElementById('shopCount').textContent = `Showing ${list.length} of ${products.length} fragrances`;
+}
+
+/* ---------- Category panes ---------- */
+const CAT_COPY = {
+  human:  {t:'The <em>Wearable</em> Collection', p:'Three eau de parfums — one for every mood. Wear Pure Fresh like a second skin: close, elegant, and unmistakably yours.',
+           f:[['check','Perfect for daily wear'],['clock','Long-lasting freshness'],['gem','Elegant scent profile']]},
+  home:   {t:'The <em>Home</em> Collection', p:'Reed diffusers and aroma decanters that scent your rooms continuously — no flame, no fuss, just an ever-present calm.',
+           f:[['wind','Continuous fragrance, no flame'],['gem','Elegant room decor'],['drop','Refreshes living spaces']]},
+  vehicle:{t:'The <em>Vehicle</em> Collection', p:'Hanging bottles and vented dashboard jars engineered for the road: compact, heat-safe, and quietly luxurious.',
+           f:[['wind','Eliminates odours'],['gem','Compact design'],['clock','Long-lasting freshness'],['shield','Safe for all vehicles']]}
+};
+function renderCats(){
+  const panes = Object.keys(CAT_COPY).map(cat=>{
+    const c = CAT_COPY[cat];
+    const rows = products.filter(p=>p.cat===cat).map(p=>`
+      <div class="mini-row" style="--tint:${SCENTS[p.scent].tint}">
+        <div class="mini-thumb">${bottleSVG(p.type,p.scent)}</div>
+        <div class="mini-info"><h4>${p.name}</h4><span>${SCENTS[p.scent].name} · ${TYPE_LABEL[p.type]||''}</span></div>
+        <div class="mini-right"><span class="mini-price">${money(p.price)}</span>
+          <button class="mini-add" data-add="${p.id}" ${p.stock===false?'disabled style="opacity:.4;pointer-events:none"':''}>Add</button></div>
+      </div>`).join('');
+    return `<div class="cat-pane ${cat==='human'?'on':''}" data-pane="${cat}">
+      <div class="cat-grid">
+        <div class="cat-copy"><h3>${c.t}</h3><p>${c.p}</p>
+          <ul class="cat-feats">${c.f.map(f=>`<li>${I(f[0],17)} ${f[1]}</li>`).join('')}</ul></div>
+        <div>${rows}</div>
+      </div></div>`;
+  }).join('');
+  document.getElementById('catPanes').innerHTML = panes;
+  positionTabInd();
+}
+function positionTabInd(){
+  const tabs = document.getElementById('catTabs');
+  const on = tabs.querySelector('button.on'); const ind = tabs.querySelector('.cat-ind');
+  if(on && ind){ ind.style.left = on.offsetLeft+'px'; ind.style.width = on.offsetWidth+'px'; }
+}
+
+/* ---------- Why list / FAQ / testimonials / marquee ---------- */
+function renderStatic(){
+  document.getElementById('whyList').innerHTML = WHY.map((w,i)=>`
+    <li class="rv" style="transition-delay:${i*.07}s"><span class="why-ico">${I(w[0],22)}</span>
+      <div><h4>${w[1]}</h4><p>${w[2]}</p></div><span class="why-num">0${i+1}</span></li>`).join('');
+  document.getElementById('faqList').innerHTML = FAQS.map(f=>`
+    <div class="faq-item"><button class="faq-q" type="button"><span>${f[0]}</span><span class="faq-ico">${I('plus',16)}</span></button>
+    <div class="faq-a"><div><p>${f[1]}</p></div></div></div>`).join('');
+  document.getElementById('tTrack').innerHTML = TESTIMONIALS.map(t=>`
+    <div class="t-slide"><div class="t-stars">${STAR.repeat(5)}</div>
+      <p class="t-quote">${t.q}</p><p class="t-author">${t.a}<span>${t.r}</span></p></div>`).join('');
+  document.getElementById('tDots').innerHTML = TESTIMONIALS.map((_,i)=>`<button data-dot="${i}" class="${i===0?'on':''}" aria-label="Review ${i+1}"></button>`).join('');
+  const words = ['Lavender','Jasmine','Sandalwood','Pure Fresh','Essential Oils','Heavenly Scents'];
+  const half = words.map(w=>`<span>${w}</span>`).join('');
+  document.getElementById('mqTrack').innerHTML = half + half;
+}
+
+/* ---------- Cart & wishlist ---------- */
+function badge(el, n){
+  el.textContent = n; el.classList.toggle('show', n>0);
+  if(n>0){ el.classList.remove('pop'); void el.offsetWidth; el.classList.add('pop'); }
+}
+function refreshBadges(){
+  const qc = cart.reduce((s,i)=>s+i.qty,0);
+  badge(document.getElementById('cartCount'), qc);
+  badge(document.getElementById('wishCount'), wishlist.length);
+  document.getElementById('cartTitleCount').textContent = qc?`(${qc})`:'';
+  document.getElementById('wishTitleCount').textContent = wishlist.length?`(${wishlist.length})`:'';
+}
+function addToCart(id, silent){
+  const p = prod(id);
+  if(!p) return;
+  if(p.stock===false){ toast('Sorry — this item is out of stock.', 'x'); return; }
+  const line = cart.find(i=>i.id===p.id);
+  if(line) line.qty++; else cart.push({id:p.id, qty:1});
+  saveAll(); refreshBadges(); renderCart(); renderShop(); renderCats();
+  if(!silent) toast(`${p.name} added to cart`, 'bag');
+}
+function renderCart(){
+  const box = document.getElementById('cartItems');
+  if(!cart.length){
+    box.innerHTML = `<div class="drawer-empty">${I('bag',40)}<h4>Your cart is empty</h4><p>Beautiful scents await you.</p><button class="btn btn-primary" data-close data-goto="#shop">Shop Now</button></div>`;
+    document.getElementById('cartFoot').style.display='none'; return;
+  }
+  document.getElementById('cartFoot').style.display='';
+  box.innerHTML = cart.map(line=>{
+    const p = prod(line.id); if(!p) return '';
+    return `<div class="c-item">
+      <div class="c-thumb" style="--tint:${SCENTS[p.scent].tint}">${bottleSVG(p.type,p.scent)}</div>
+      <div class="c-mid"><h4>${p.name}</h4><span class="c-sub">${SCENTS[p.scent].name} · ${TYPE_LABEL[p.type]||''}</span>
+        <div class="qty"><button data-act="dec" data-id="${p.id}" aria-label="Decrease">${I('minus',13)}</button><span>${line.qty}</span><button data-act="inc" data-id="${p.id}" aria-label="Increase">${I('plus',13)}</button></div></div>
+      <div class="c-right"><span class="c-price">${money(p.price*line.qty)}</span><button class="c-remove" data-crm="${p.id}" aria-label="Remove">${I('trash',16)}</button></div>
+    </div>`;
+  }).join('');
+  const sub = cart.reduce((s,l)=>s+(prod(l.id)?.price||0)*l.qty,0);
+  document.getElementById('cartSubtotal').textContent = money(sub);
+  const txt = "Hello Pure Fresh! I'd like to order:\n" + cart.map(l=>{const p=prod(l.id);return `• ${l.qty}× ${p.name} — ${money(p.price*l.qty)}`}).join('\n') + `\n\nSubtotal: ${money(sub)}`;
+  document.getElementById('waOrder').href = waLink(txt);
+}
+function renderWish(){
+  const box = document.getElementById('wishItems');
+  if(!wishlist.length){
+    box.innerHTML = `<div class="drawer-empty">${I('heart',40)}<h4>No favourites yet</h4><p>Tap the heart on any fragrance to save it here.</p><button class="btn btn-primary" data-close data-goto="#shop">Discover Scents</button></div>`;
+    return;
+  }
+  box.innerHTML = wishlist.map(id=>{
+    const p = prod(id); if(!p) return '';
+    return `<div class="c-item">
+      <div class="c-thumb" style="--tint:${SCENTS[p.scent].tint}">${bottleSVG(p.type,p.scent)}</div>
+      <div class="c-mid"><h4>${p.name}</h4><span class="c-sub">${SCENTS[p.scent].name} · ${money(p.price)}</span></div>
+      <div class="w-actions"><button class="w-move" data-wmove="${p.id}">To Cart</button><button class="c-remove" data-wrm="${p.id}" aria-label="Remove">${I('trash',16)}</button></div>
+    </div>`;
+  }).join('');
+}
+function toggleWish(id){
+  const i = wishlist.indexOf(+id);
+  const p = prod(id);
+  if(i>-1){ wishlist.splice(i,1); toast(`${p.name} removed from wishlist`,'heart'); }
+  else { wishlist.push(+id); toast(`${p.name} saved to wishlist`,'heart'); }
+  saveAll(); refreshBadges(); renderWish(); renderShop();
+}
+
+/* ---------- Overlays ---------- */
+const scrim = document.getElementById('scrim');
+const OVERLAYS = ['cartDrawer','wishDrawer','checkoutModal','adminModal','infoModal','searchOverlay'];
+function openOverlay(id){
+  closeOverlays(id);
+  const el = document.getElementById(id);
+  if(!el) return;
+  el.classList.add('open'); scrim.classList.add('on');
+  document.body.classList.add('locked');
+  if(id==='mMenu') document.getElementById('mMenu').classList.add('open');
+  if(id==='searchOverlay') setTimeout(()=>document.getElementById('searchInput').focus(),120);
+  if(id==='adminModal'){ adminAuth ? showAdmin() : document.getElementById('admPin').focus(); }
+}
+function closeOverlays(keep){
+  OVERLAYS.forEach(id=>{ if(id!==keep) document.getElementById(id).classList.remove('open'); });
+  document.getElementById('mMenu').classList.remove('open');
+  scrim.classList.toggle('on', !!keep);
+  if(!keep) document.body.classList.remove('locked');
+}
+scrim.addEventListener('click', ()=>closeOverlays());
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeOverlays(); });
+
+/* ---------- Hero scent switcher ---------- */
+const NOTES = {
+  lavender:  ['Bergamot & Wild Herbs','French Lavender','Soft Musk & Tonka'],
+  jasmine:   ['Night-Blooming Jasmine','Ylang & White Petals','Warm Amber'],
+  sandalwood:['Cardamom & Fresh Air','Mysore Sandalwood','Cedar, Vanilla & Musk']
+};
+function setHeroScent(s){
+  const stage = document.getElementById('heroStage');
+  const sc = SCENTS[s];
+  stage.dataset.scent = s;
+  stage.style.setProperty('--liq', sc.liq);
+  stage.style.setProperty('--tint', sc.tint+'cc');
+  stage.style.setProperty('--vap', sc.vap);
+  document.querySelectorAll('#scentTabs button').forEach(b=>b.classList.toggle('on', b.dataset.scent===s));
+  document.querySelectorAll('.hero-bot').forEach(b=>b.classList.toggle('on', b.dataset.bot===s));
+  document.getElementById('heroBottleScent').textContent = sc.name;
+  const notes = document.getElementById('heroNotes');
+  notes.classList.add('swap');
+  setTimeout(()=>{
+    notes.querySelector('[data-note="top"]').textContent   = NOTES[s][0];
+    notes.querySelector('[data-note="heart"]').textContent = NOTES[s][1];
+    notes.querySelector('[data-note="base"]').textContent  = NOTES[s][2];
+    notes.classList.remove('swap');
+  }, 280);
+}
+document.getElementById('scentTabs').addEventListener('click', e=>{
+  const b = e.target.closest('button'); if(b) setHeroScent(b.dataset.scent);
+});
+
+/* ---------- Category tabs ---------- */
+document.getElementById('catTabs').addEventListener('click', e=>{
+  const b = e.target.closest('button[data-tab]'); if(!b) return;
+  document.querySelectorAll('#catTabs button').forEach(x=>x.classList.toggle('on', x===b));
+  positionTabInd();
+  document.querySelectorAll('.cat-pane').forEach(p=>p.classList.toggle('on', p.dataset.pane===b.dataset.tab));
+});
+
+/* ---------- Scent panels ---------- */
+document.getElementById('scentPanels').addEventListener('click', e=>{
+  const shop = e.target.closest('[data-scent-shop]');
+  if(shop){
+    fScent = shop.dataset.scentShop; fCat='all';
+    document.querySelectorAll('#scentChips .chip').forEach(c=>c.classList.toggle('on', c.dataset.chipScent===fScent));
+    document.querySelectorAll('#catChips .chip').forEach(c=>c.classList.toggle('on', c.dataset.chipCat==='all'));
+    renderShop();
+    document.getElementById('shop').scrollIntoView({behavior:'smooth'});
+    return;
+  }
+  const panel = e.target.closest('.sp');
+  if(panel && !panel.classList.contains('active')){
+    document.querySelectorAll('.sp').forEach(p=>p.classList.toggle('active', p===panel));
+    setHeroScent(panel.dataset.scent);
+  }
+});
+
+/* ---------- Shop toolbar ---------- */
+document.getElementById('catChips').addEventListener('click', e=>{
+  const c = e.target.closest('[data-chip-cat]'); if(!c) return;
+  fCat = c.dataset.chipCat;
+  document.querySelectorAll('#catChips .chip').forEach(x=>x.classList.toggle('on', x===c));
+  renderShop();
+});
+document.getElementById('scentChips').addEventListener('click', e=>{
+  const c = e.target.closest('[data-chip-scent]'); if(!c) return;
+  fScent = c.dataset.chipScent;
+  document.querySelectorAll('#scentChips .chip').forEach(x=>x.classList.toggle('on', x===c));
+  renderShop();
+});
+document.getElementById('shopSearchInput').addEventListener('input', e=>{ fQuery = e.target.value.trim().toLowerCase(); renderShop(); });
+document.getElementById('sortSel').addEventListener('change', e=>{ fSort = e.target.value; renderShop(); });
+
+/* ---------- Global click delegation ---------- */
+document.addEventListener('click', e=>{
+  const t = e.target;
+  const open = t.closest('[data-open]');
+  if(open){ e.preventDefault();
+    const map = {cart:'cartDrawer', wish:'wishDrawer', search:'searchOverlay', admin:'adminModal', menu:'mMenu'};
+    openOverlay(map[open.dataset.open]); return;
+  }
+  if(t.closest('[data-close]')){
+    e.preventDefault();
+    const goto = t.closest('[data-close]').dataset.goto;
+    closeOverlays();
+    if(goto) setTimeout(()=>document.querySelector(goto)?.scrollIntoView({behavior:'smooth'}), 250);
+    return;
+  }
+  const add = t.closest('[data-add]');     if(add){ addToCart(add.dataset.add); return; }
+  const wish = t.closest('[data-wish]');   if(wish){ toggleWish(wish.dataset.wish); return; }
+  const crm = t.closest('[data-crm]');     if(crm){ cart = cart.filter(l=>l.id!==+crm.dataset.crm); saveAll(); refreshBadges(); renderCart(); renderShop(); renderCats(); return; }
+  const wrm = t.closest('[data-wrm]');     if(wrm){ wishlist = wishlist.filter(id=>id!==+wrm.dataset.wrm); saveAll(); refreshBadges(); renderWish(); renderShop(); return; }
+  const wmv = t.closest('[data-wmove]');   if(wmv){ addToCart(wmv.dataset.wmove); wishlist = wishlist.filter(id=>id!==+wmv.dataset.wmove); saveAll(); refreshBadges(); renderWish(); renderShop(); return; }
+  const qty = t.closest('[data-act]');
+  if(qty){
+    const line = cart.find(l=>l.id===+qty.dataset.id); if(!line) return;
+    if(qty.dataset.act==='inc') line.qty++; else { line.qty--; if(line.qty<1) cart = cart.filter(l=>l!==line); }
+    saveAll(); refreshBadges(); renderCart(); renderShop(); renderCats(); return;
+  }
+  const info = t.closest('[data-info]');
+  if(info){ e.preventDefault(); showInfo(info.dataset.info); return; }
+});
+
+/* ---------- Search overlay ---------- */
+const searchInput = document.getElementById('searchInput');
+const searchResults = document.getElementById('searchResults');
+function runSearch(){
+  const q = searchInput.value.trim().toLowerCase();
+  if(!q){ searchResults.innerHTML=''; return; }
+  const hits = products.filter(p=>(p.name+SCENTS[p.scent].name+CATS[p.cat]).toLowerCase().includes(q)).slice(0,7);
+  searchResults.innerHTML = hits.length ? hits.map(p=>`
+    <div class="sr-row" data-sr="${p.id}" style="--tint:${SCENTS[p.scent].tint}">
+      <div class="sr-thumb">${bottleSVG(p.type,p.scent)}</div>
+      <div><h4>${p.name}</h4><small>${SCENTS[p.scent].name} · ${CATS[p.cat]}</small></div>
+      <span class="sr-price">${money(p.price)}</span>
+      <button class="sr-add" data-add="${p.id}">Add</button>
+    </div>`).join('') : `<p class="so-none">No fragrances found for “${searchInput.value}”.</p>`;
+}
+searchInput.addEventListener('input', runSearch);
+searchInput.addEventListener('keydown', e=>{
+  if(e.key==='Enter'){ const first = searchResults.querySelector('[data-sr]'); if(first) jumpToProduct(first.dataset.sr); }
+});
+searchResults.addEventListener('click', e=>{
+  if(e.target.closest('[data-add]')) return;
+  const row = e.target.closest('[data-sr]'); if(row) jumpToProduct(row.dataset.sr);
+});
+function jumpToProduct(id){
+  closeOverlays();
+  setTimeout(()=>{
+    const card = document.querySelector(`.p-card[data-id="${id}"]`);
+    if(!card) return;
+    card.scrollIntoView({behavior:'smooth', block:'center'});
+    card.classList.remove('flash'); void card.offsetWidth; card.classList.add('flash');
+  }, 320);
+}
+
+/* ---------- Checkout ---------- */
+const shipCost = sub => sub>=75 || sub===0 ? 0 : 6.90;
+document.getElementById('toCheckout').addEventListener('click', ()=>{
+  if(!cart.length){ toast('Your cart is empty.','bag'); return; }
+  renderCheckout(); openOverlay('checkoutModal');
+});
+function renderCheckout(){
+  document.getElementById('coMain').style.display='grid';
+  document.getElementById('coSuccess').classList.remove('show');
+  document.getElementById('coItems').innerHTML = cart.map(l=>{
+    const p = prod(l.id);
+    return `<div class="sum-row"><span>${l.qty} × ${p.name}</span><b>${money(p.price*l.qty)}</b></div>`;
+  }).join('');
+  const sub = cart.reduce((s,l)=>s+prod(l.id).price*l.qty,0);
+  const ship = shipCost(sub);
+  document.getElementById('coSubtotal').textContent = money(sub);
+  document.getElementById('coShip').textContent = ship? money(ship) : 'Free';
+  document.getElementById('coTotal').textContent = money(sub+ship);
+  updatePayBtn();
+}
+function payMethod(){ return document.querySelector('input[name="pay"]:checked').value; }
+function updatePayBtn(){
+  const m = payMethod(), total = document.getElementById('coTotal')?.textContent || '';
+  document.getElementById('payBtn').textContent = m==='cod' ? 'Place Order' : 'Pay ' + total + ' Securely';
+}
+document.getElementById('payOpts').addEventListener('change', ()=>{
+  document.querySelectorAll('.pay-opt').forEach(o=>o.classList.toggle('sel', o.querySelector('input').checked));
+  document.getElementById('cardFields').classList.toggle('show', payMethod()==='card');
+  document.getElementById('payOpts').nextElementSibling;
+  const note = document.querySelector('.demo-note');
+  note.textContent = payMethod()==='payhere'
+    ? 'You would be redirected to the PayHere secure gateway. Demo mode — no redirect, no charge.'
+    : payMethod()==='cod' ? 'Pay in cash when your Pure Fresh order arrives at your door.'
+    : 'Demo checkout — no real payment is processed. Connect your live Stripe or PayHere keys to accept payments.';
+  updatePayBtn();
+});
+const cardNum = document.getElementById('cardNum'), cardExp = document.getElementById('cardExp'), cardCvc = document.getElementById('cardCvc');
+cardNum.addEventListener('input', ()=>{ cardNum.value = cardNum.value.replace(/\D/g,'').slice(0,16).replace(/(.{4})/g,'$1 ').trim(); });
+cardExp.addEventListener('input', ()=>{ let v = cardExp.value.replace(/\D/g,'').slice(0,4); if(v.length>2) v = v.slice(0,2)+'/'+v.slice(2); cardExp.value = v; });
+cardCvc.addEventListener('input', ()=>{ cardCvc.value = cardCvc.value.replace(/\D/g,'').slice(0,4); });
+
+function validate(fields){
+  let ok = true;
+  fields.forEach(([el, test])=>{
+    const field = el.closest('.field');
+    const bad = !test(el.value.trim());
+    field.classList.toggle('bad', bad);
+    if(bad) ok = false;
+  });
+  return ok;
+}
+document.getElementById('coForm').addEventListener('submit', e=>{
+  e.preventDefault();
+  const m = payMethod();
+  let fields = [
+    [document.getElementById('coName'),  v=>v.length>1],
+    [document.getElementById('coEmail'), v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)],
+    [document.getElementById('coPhone'), v=>/^[+\d][\d\s-]{6,}$/.test(v)],
+    [document.getElementById('coAddr'),  v=>v.length>4]
+  ];
+  if(m==='card') fields = fields.concat([
+    [cardNum, v=>v.replace(/\s/g,'').length===16],
+    [cardExp, v=>/^\d{2}\/\d{2}$/.test(v)],
+    [cardCvc, v=>/^\d{3,4}$/.test(v)]
+  ]);
+  if(!validate(fields)){ toast('Please review the highlighted fields.','x'); return; }
+
+  const sub = cart.reduce((s,l)=>s+prod(l.id).price*l.qty,0);
+  const total = sub + shipCost(sub);
+  const order = {
+    id:'PF-' + (1040 + orders.length + 1),
+    date: new Date().toLocaleDateString('en-GB',{day:'2-digit',month:'short',year:'numeric'}),
+    name: document.getElementById('coName').value.trim(),
+    phone: document.getElementById('coPhone').value.trim(),
+    items: cart.map(l=>({name:prod(l.id).name, qty:l.qty, price:prod(l.id).price})),
+    total, method: m==='card'?'Card (Stripe)':m==='payhere'?'PayHere':'Cash on Delivery',
+    status:'Pending'
+  };
+  orders.unshift(order); saveAll();
+  cart = []; saveAll(); refreshBadges(); renderCart(); renderShop(); renderCats();
+  document.getElementById('coMain').style.display='none';
+  document.getElementById('coSuccess').classList.add('show');
+  document.getElementById('okId').textContent = `Order ${order.id} · ${money(total)}`;
+  document.getElementById('okWa').href = waLink(`Hello Pure Fresh! I just placed order ${order.id} (Total ${money(total)}). Please confirm my delivery. Thank you!`);
+  toast(`Order ${order.id} confirmed — thank you!`, 'check');
+});
+
+/* ---------- FAQ ---------- */
+document.getElementById('faqList').addEventListener('click', e=>{
+  const q = e.target.closest('.faq-q'); if(!q) return;
+  const item = q.parentElement;
+  const wasOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
+  if(!wasOpen) item.classList.add('open');
+});
+
+/* ---------- Testimonials slider ---------- */
+let tIdx = 0, tTimer;
+function tGo(i){
+  tIdx = (i + TESTIMONIALS.length) % TESTIMONIALS.length;
+  document.getElementById('tTrack').style.transform = `translateX(-${tIdx*100}%)`;
+  document.querySelectorAll('#tDots button').forEach((d,k)=>d.classList.toggle('on', k===tIdx));
+}
+function tAuto(){ clearInterval(tTimer); tTimer = setInterval(()=>tGo(tIdx+1), 6000); }
+document.getElementById('tPrev').innerHTML = I('chev',18);
+document.getElementById('tNext').innerHTML = '<span style="transform:rotate(180deg);display:block">'+I('chev',18)+'</span>';
+document.getElementById('tPrev').addEventListener('click', ()=>{tGo(tIdx-1);tAuto();});
+document.getElementById('tNext').addEventListener('click', ()=>{tGo(tIdx+1);tAuto();});
+document.getElementById('tDots').addEventListener('click', e=>{ const d=e.target.closest('[data-dot]'); if(d){tGo(+d.dataset.dot);tAuto();} });
+const tView = document.querySelector('.t-viewport');
+tView.addEventListener('mouseenter', ()=>clearInterval(tTimer));
+tView.addEventListener('mouseleave', tAuto);
+let tTouchX = null;
+tView.addEventListener('pointerdown', e=>tTouchX = e.clientX);
+tView.addEventListener('pointerup', e=>{
+  if(tTouchX===null) return;
+  const dx = e.clientX - tTouchX;
+  if(Math.abs(dx)>40){ tGo(tIdx + (dx<0?1:-1)); tAuto(); }
+  tTouchX = null;
+});
+tAuto();
+
+/* ---------- Contact & newsletter ---------- */
+document.getElementById('contactForm').addEventListener('submit', e=>{
+  e.preventDefault();
+  const ok = validate([
+    [document.getElementById('cfName'),  v=>v.length>1],
+    [document.getElementById('cfEmail'), v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)],
+    [document.getElementById('cfPhone'), v=>/^[+\d][\d\s-]{6,}$/.test(v)],
+    [document.getElementById('cfMsg'),   v=>v.length>3]
+  ]);
+  if(!ok) return;
+  e.target.reset();
+  toast("Message sent — we'll reply within 24 hours.", 'mail');
+});
+document.getElementById('newsForm').addEventListener('submit', e=>{
+  e.preventDefault();
+  const em = e.target.querySelector('input');
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em.value.trim())){ toast('Please enter a valid email.','x'); return; }
+  em.value=''; toast('Welcome to the Scent List — first letter arrives soon.','check');
+});
+
+/* ---------- Info modal (privacy / terms) ---------- */
+const LEGAL = {
+  privacy: ['Privacy Policy','<p>We collect only the details you share at checkout or in our contact form — name, contact details and delivery address — solely to fulfil your order and respond to enquiries.</p><p style="margin-top:12px">Pure Fresh never sells or shares your personal data with third parties beyond the delivery partners required to bring your fragrances to you. You may request deletion of your data at any time via WhatsApp or email.</p><p style="margin-top:12px">This demo site stores your cart, wishlist and orders locally in your own browser — nothing leaves your device.</p>'],
+  terms: ['Terms & Conditions','<p>All Pure Fresh fragrances are for ambient and personal fragrance use. Keep bottles away from direct sunlight and open flames, and out of reach of children and pets.</p><p style="margin-top:12px">Orders are prepared within 2 business days. Unopened items may be returned within 14 days of delivery. Due to the personal nature of fragrances, opened products cannot be returned.</p><p style="margin-top:12px">This is a demonstration storefront — payments are simulated and no real charges occur.</p>']
+};
+function showInfo(key){
+  const [title, body] = LEGAL[key];
+  document.getElementById('infoTitle').textContent = title;
+  document.getElementById('infoBody').innerHTML = body;
+  openOverlay('infoModal');
+}
+
+/* ---------- Admin dashboard ---------- */
+document.getElementById('admPin').addEventListener('keydown', e=>{
+  if(e.key!=='Enter') return;
+  const gate = document.getElementById('admGate');
+  if(e.target.value === '1234'){
+    adminAuth = true; showAdmin();
+  } else {
+    gate.classList.remove('shake'); void gate.offsetWidth; gate.classList.add('shake');
+    toast('Incorrect PIN — try 1234 for the demo.','lock');
+    e.target.value='';
+  }
+});
+function showAdmin(){
+  document.getElementById('admGate').style.display='none';
+  document.getElementById('admBody').classList.add('show');
+  document.getElementById('admTabs').style.display='flex';
+  renderAdmin();
+}
+function renderAdmin(){
+  const revenue = orders.reduce((s,o)=>s+o.total,0);
+  document.getElementById('admStats').innerHTML = `
+    <div><small>Products</small><b>${products.length}</b></div>
+    <div><small>Orders</small><b>${orders.length}</b></div>
+    <div><small>Revenue</small><b>${money(revenue)}</b></div>
+    <div><small>Wishlist Saves</small><b>${wishlist.length}</b></div>`;
+  document.getElementById('admProducts').innerHTML = `
+    <table class="adm-table"><thead><tr><th></th><th>Product</th><th>Category</th><th>Scent</th><th>Price ($)</th><th>In Stock</th></tr></thead>
+    <tbody>${products.map(p=>`<tr>
+      <td><div class="a-thumb" style="--tint:${SCENTS[p.scent].tint}">${bottleSVG(p.type,p.scent)}</div></td>
+      <td class="a-name">${p.name}</td><td>${CATS[p.cat]}</td><td>${SCENTS[p.scent].name}</td>
+      <td><input class="price-in" type="number" min="1" step="0.5" value="${p.price}" data-aprice="${p.id}"></td>
+      <td><label class="sw"><input type="checkbox" data-astock="${p.id}" ${p.stock!==false?'checked':''}><i></i></label></td>
+    </tr>`).join('')}</tbody></table>
+    <form class="adm-form" id="addProdForm">
+      <input id="npName" placeholder="Product name" required>
+      <select id="npScent"><option value="lavender">Lavender</option><option value="jasmine">Jasmine</option><option value="sandalwood">Sandalwood</option></select>
+      <select id="npCat"><option value="human">Human Use</option><option value="home">Home</option><option value="vehicle">Vehicle</option></select>
+      <select id="npType"><option value="spray">Perfume Spray</option><option value="diffuser">Reed Diffuser</option><option value="aroma">Aroma Bottle</option><option value="hanging">Hanging Bottle</option><option value="jar">Dashboard Jar</option></select>
+      <input id="npPrice" type="number" min="1" step="0.5" placeholder="Price">
+      <button class="btn btn-primary" type="submit">Add</button>
+    </form>`;
+  document.getElementById('admOrders').innerHTML = orders.length ? orders.map(o=>`
+    <div class="order-card">
+      <div class="order-top"><b>${o.id}</b><small>${o.date} · ${o.method}</small><small>${o.name} · ${o.phone}</small></div>
+      <div class="order-items">${o.items.map(i=>`${i.qty}× ${i.name} (${money(i.price)})`).join(' · ')}</div>
+      <div class="order-bot"><b>${money(o.total)}</b>
+        <select class="status-sel" data-order="${o.id}">
+          ${['Pending','Confirmed','Shipped','Delivered'].map(s=>`<option ${o.status===s?'selected':''}>${s}</option>`).join('')}
+        </select></div>
+    </div>`).join('') : `<div class="drawer-empty" style="padding:50px 20px">${I('box',40)}<h4>No orders yet</h4><p>Orders placed at checkout appear here instantly.</p></div>`;
+}
+document.getElementById('adminModal').addEventListener('change', e=>{
+  const price = e.target.closest('[data-aprice]');
+  if(price){
+    const p = prod(price.dataset.aprice);
+    p.price = Math.max(0.5, parseFloat(price.value)||p.price);
+    if(custom.some(c=>c.id===p.id)){ custom = custom.map(c=>c.id===p.id?{...p}:c); }
+    else overrides[p.id] = {price:p.price, stock:p.stock!==false};
+    saveAll(); renderShop(); renderCats(); renderCart(); toast(`${p.name} price updated to ${money(p.price)}`,'check');
+  }
+  const stock = e.target.closest('[data-astock]');
+  if(stock){
+    const p = prod(stock.dataset.astock);
+    p.stock = stock.checked;
+    if(custom.some(c=>c.id===p.id)){ custom = custom.map(c=>c.id===p.id?{...p}:c); }
+    else overrides[p.id] = {price:p.price, stock:p.stock};
+    saveAll(); renderShop(); renderCats(); toast(`${p.name} is now ${p.stock?'in stock':'out of stock'}`,'check');
+  }
+  const status = e.target.closest('[data-order]');
+  if(status){
+    const o = orders.find(x=>x.id===status.dataset.order);
+    o.status = status.value; saveAll(); toast(`Order ${o.id} marked ${o.status}`,'check');
+  }
+});
+document.getElementById('adminModal').addEventListener('submit', e=>{
+  if(e.target.id!=='addProdForm') return;
+  e.preventDefault();
+  const name = document.getElementById('npName').value.trim();
+  const price = parseFloat(document.getElementById('npPrice').value);
+  if(!name || !price){ toast('Product needs a name and a price.','x'); return; }
+  const np = {
+    id: Date.now(), name, price, stock:true,
+    scent: document.getElementById('npScent').value,
+    cat:   document.getElementById('npCat').value,
+    type:  document.getElementById('npType').value
+  };
+  custom.push(np); products.push(np); saveAll();
+  renderShop(); renderCats(); renderAdmin(); refreshBadges();
+  toast(`“${name}” added to the collection`,'plus');
+});
+document.getElementById('admTabs').addEventListener('click', e=>{
+  const b = e.target.closest('[data-atab]'); if(!b) return;
+  document.querySelectorAll('#admTabs [data-atab]').forEach(x=>x.classList.toggle('on', x===b));
+  document.querySelectorAll('.adm-tab').forEach(p=>p.classList.toggle('on', p.dataset.apane===b.dataset.atab));
+});
+document.getElementById('admReset').addEventListener('click', ()=>{
+  ['pf_overrides','pf_custom','pf_orders'].forEach(k=>localStorage.removeItem(k));
+  toast('Demo data cleared — refreshing…','check');
+  setTimeout(()=>location.reload(), 900);
+});
+
+/* ---------- Reveal on scroll ---------- */
+const io = new IntersectionObserver(es=>es.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } }), {threshold:.12});
+function observeReveals(){ document.querySelectorAll('.rv:not(.in)').forEach(el=>io.observe(el)); }
+
+/* ---------- Nav scroll state ---------- */
+const nav = document.getElementById('nav');
+addEventListener('scroll', ()=>nav.classList.toggle('scrolled', scrollY>30), {passive:true});
+
+/* ---------- Hero petal canvas ---------- */
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const cv = document.getElementById('petalCanvas'), ctx = cv.getContext('2d');
+  let W,H, petals = [], running = true;
+  const COLORS = ['rgba(184,162,214,.5)','rgba(212,175,55,.32)','rgba(203,184,230,.42)','rgba(143,118,194,.28)'];
+  function size(){ W = cv.width = cv.offsetWidth; H = cv.height = cv.offsetHeight; }
+  function make(y){ return { x:Math.random()*W, y: y??Math.random()*H, r:3+Math.random()*4.5, vy:.25+Math.random()*.5, sway:Math.random()*Math.PI*2, rot:Math.random()*Math.PI, vr:(Math.random()-.5)*.02, c:COLORS[Math.random()*COLORS.length|0] }; }
+  function tick(){
+    if(running){
+      ctx.clearRect(0,0,W,H);
+      petals.forEach(p=>{
+        p.y += p.vy; p.sway += .012; p.x += Math.sin(p.sway)*.5; p.rot += p.vr;
+        if(p.y > H+12) Object.assign(p, make(-14));
+        ctx.save(); ctx.translate(p.x,p.y); ctx.rotate(p.rot);
+        ctx.fillStyle = p.c; ctx.beginPath();
+        ctx.ellipse(0,0,p.r,p.r*.45,0,0,Math.PI*2); ctx.fill(); ctx.restore();
+      });
+    }
+    requestAnimationFrame(tick);
+  }
+  size(); petals = Array.from({length:16},()=>make());
+  addEventListener('resize', size);
+  new IntersectionObserver(es=>running = es[0].isIntersecting).observe(document.querySelector('.hero'));
+  tick();
+})();
+
+/* ---------- Init ---------- */
+document.getElementById('year').textContent = new Date().getFullYear();
+document.querySelectorAll('[data-ic]').forEach(el=> el.innerHTML = I(el.dataset.ic, el.classList.contains('wa-float')||el.closest('.wa-float')?24:(el.closest('.c-social, .foot-social')?19:18)));
+document.querySelector('[data-open="search"]').insertAdjacentHTML('afterbegin', I('search',19));
+document.querySelector('[data-open="wish"]').insertAdjacentHTML('afterbegin', I('heart',19));
+document.querySelector('[data-open="cart"]').insertAdjacentHTML('afterbegin', I('bag',19));
+document.querySelector('[data-open="menu"]').insertAdjacentHTML('afterbegin', I('menu',21));
+document.querySelector('.m-close').innerHTML = I('x',24);
+document.querySelectorAll('.x-btn').forEach(b=>b.innerHTML = I('x',20));
+Object.keys(BOTS).forEach(k=>{
+  document.querySelectorAll(`[data-bot-slot="${k}"], .hero-bot[data-bot="${k}"]`).forEach(el=> el.innerHTML = BOTS[k]());
+});
+renderStatic();
+renderCats();
+renderShop();
+renderCart();
+renderWish();
+refreshBadges();
+setHeroScent('lavender');
+observeReveals();
+addEventListener('resize', positionTabInd);
+</script>
+</body>
+</html>
